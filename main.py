@@ -279,3 +279,8 @@ money=10000
 p=0.05
 tl=24
 
+for m in range(1,tl+1):
+    money=.....
+    print(f"miesiąc={m}")
+
+
