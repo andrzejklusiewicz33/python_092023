@@ -68,6 +68,52 @@
 #x=1.23
 #2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika
 # jego masę w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
+#
+# height=float(input('podaj wzrost:\n'))
+# bmi=72/pow(height,2)
 
-height=float(input('podaj wzrost:\n'))
-bmi=72/pow(height,2)
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach:\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'Twoje BMI={bmi}')
+#
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach:\n'))
+# bmi=weight/pow(height,2)
+# print(f'Twoje BMI={round(bmi,2)}')
+
+# x=1
+# if x==1:
+#     print('x wynosi jeden')
+#     print('siema!')
+# print('koniec')
+
+# x=2
+# if x==1:
+#     print('x jest równe jeden')
+# else:
+#     print('x NIE jest równe jeden')
+#
+# x=4
+# if x==1:
+#     print('jeden')
+# elif x==2:
+#     print('dwa')
+# elif x==3:
+#     print('trzy')
+# else:
+#     print('x mniejsze od jeden lub większe od 3 (albo liczba zmiennoprzecinkowa)')
+
+#3. Niech użytkownik poda jakąś liczbę.
+# Jeśli poda dodatnią to chcemy wyświetlić tę wartość
+# z informacją "wartość dodatnia",
+# jeśli zero to wyświetlamy z informacją "równe zero",
+# jeśli ujemna to wyświetlamy "wartość ujemna".
+# x=1
+# if x>0:
+#     pass
+#
+# def bmi(w,m):
+#     pass
+#
+# bmi(1.76,72)
