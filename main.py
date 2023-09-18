@@ -151,11 +151,15 @@
 #     print(number,'jest zerem')
 
 
+# 4. Rozbuduj swój program do bmi w taki sposob by
+# poza wyswietleniem obliczonego bmi
+#   wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+
 #
-# height=float(input('podaj wzrost w metrach:\n'))
-# weight=float(input('podaj masę w kilogramach:\n'))
-# bmi=round(weight/pow(height,2),2)
-# print(f'Twoje BMI={bmi}')
+height=float(input('podaj wzrost w metrach:\n'))
+weight=float(input('podaj masę w kilogramach:\n'))
+bmi=round(weight/pow(height,2),2)
+print(f'Twoje BMI={bmi}')
 
 # if bmi>18.5 and bmi<25:
 #     pass
