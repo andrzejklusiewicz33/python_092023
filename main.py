@@ -435,3 +435,21 @@ print('hello')  #komentarz
 # Program ma wyświetlić wszystkie linie które nie są w całości komentarzami
 # wraz z numerami tych linii w pliku
 
+# file_name='main.py'
+# for line in open(file_name,encoding='utf-8'):
+#     if len(line.strip())>0 and line.strip()[0]!='#':
+#         print(line)
+
+
+
+# file_name='main.py'
+# for line in open(file_name,encoding='utf-8'):
+#     if  line.strip()[0]!='#' and len(line.strip())>0:
+#         print(line)
+
+file_name=input('podaj nazwę pliku:\n')
+x=0
+for line in open(file_name,encoding='utf-8'):
+    x+=1
+    if  len(line.strip())>0 and line.strip()[0]!='#':
+        print(x,line.strip())
