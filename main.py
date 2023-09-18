@@ -117,7 +117,45 @@
 #     pass
 #
 # bmi(1.76,72)
+#
+# number=int(input('dej liczbę:\n'))
+# if number>0:
+#     print(number,'jest dodatnia')
+# elif number<0:
+#     print(number,'jest ujemna')
 
-number=int(input('dej liczbę:\n'))
-if number>0:
-    print(number,'jest dodatnia')
+#
+# number=int(input('dej liczbę:\n'))
+# if number>0:
+#     print(number,'jest dodatnia')
+# elif number<0:
+#     print(number,'jest ujemna')
+# else:
+#     print(number,'jest zerem')
+
+
+# number=int(input('dej liczbę:\n'))
+# if number>0:
+#     print(number,'jest dodatnia')
+# elif number<0:
+#     print(number,'jest ujemna')
+# elif number==0:
+#     print(number,'jest zerem')
+
+# number=int(input('dej liczbę:\n'))
+# if number>0:
+#     print(number,'jest dodatnia')
+# elif number<0:
+#     print(number,'jest ujemna')
+# else:
+#     print(number,'jest zerem')
+
+
+#
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach:\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'Twoje BMI={bmi}')
+
+# if bmi>18.5 and bmi<25:
+#     pass
