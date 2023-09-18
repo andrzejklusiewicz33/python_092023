@@ -117,3 +117,7 @@
 #     pass
 #
 # bmi(1.76,72)
+
+number=int(input('dej liczbę:\n'))
+if number>0:
+    print(number,'jest dodatnia')
