@@ -209,4 +209,45 @@
 # for e in lista:
 #     print(e)
 
+# for x in (1,11,2):
+#     print(f'siema! {x}')
+
 #5. Wyświetl 20 kolejnych potęg liczby 2
+
+# for p in range(1,21):
+#     print(f"{p} potęga liczby 2 to",pow(2,p))
+
+# for x in range(-10,11):
+#     print(x)
+
+# for x in range(-10,11):
+#     print(x)
+#     if x<0:
+#         print('ujemna')
+#     elif x==0:
+#         print('zero')
+#     else:
+#         print('dodatnia')
+
+#
+# for x in range(-10,11):
+#     if x<0:
+#         print(f'{x} ujemna')
+#     elif x==0:
+#         print(f'{x} zero')
+#     else:
+#         print(f'{x} dodatnia')
+
+# imie2=input('podaj imie:\n')
+# nazwisko2=input('podaj nazwisko:\n')
+# print(f"Witaj,{imie2}",imie2,nazwisko2)
+
+#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+  #parzysta czy nieparzysta
+
+# x=12
+# print(x%2)
+# if x%2==0:
+#     print(f'{x} jest parzysty')
+# else:
+#     print(f'{x} jest nieparzysty')
