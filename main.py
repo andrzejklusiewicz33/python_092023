@@ -328,3 +328,45 @@
 #9.  Napisz program który przyjmie od użyszkodnika ciąg tekstowy
 # a następnie usunie z niego znaki ,.!? i wyświetli
 # powiększony do dużych liter na konsoli
+
+# text=input('dej tekst:\n')
+# print(text
+#       .replace('.','')
+#       .replace(',','')
+#       .replace('!','')
+#       .replace('?','')
+#       .upper()
+#       )
+#
+# Niebo,
+# Niebo!
+# Niebo.
+
+# text='hello ! ? , . koniec'
+# not_wanted=['!','?',',','.','e','l']
+# for e in not_wanted:
+#     text=text.replace(e,'')
+# print(text)
+
+# print(len('siema'))
+# print(len([1,2,3,4]))
+#print('siema'.len()) #nie ma
+
+# t="        helllooooo         "
+# print(t)
+# print(t.strip())
+#
+# t='aaaaa bbbb aaaaa'
+# print(t.strip('a'))
+
+
+# t="        helllooooo         "
+# print(len(t))
+# print(len(t.strip()))
+
+
+for line in open('data.csv',encoding='utf-8'):
+    print(line.strip(), len(line.strip()))
+
+#10. Napisz program który wyświetli na konsoli niepuste linie
+# z pliku tekstowego którego nazwę poda użytkownik
