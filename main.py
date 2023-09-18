@@ -274,13 +274,28 @@
   # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
   # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
   # Kapitalizacja comiesięczna
+#
+# money=10000
+# p=0.05
+# tl=24
 
-money=10000
-p=0.05
-tl=24
+# for m in range(1,tl+1):
+#     money=round(money+(money*p/12),2)
+#     print(f"miesiąc={m} hajs={money}")
 
-for m in range(1,tl+1):
-    money=.....
-    print(f"miesiąc={m}")
+#
+# money=100000
+# p=-0.1
+# tl=60
+#
+# for m in range(1,tl+1):
+#     money=round(money+(money*p/12),2)
+#     print(f"miesiąc={m} hajs={money}")
 
 
+#8. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby
+# 2 aż wartość  potęgi nie przekroczy wartości podanej przez użytkownika
+
+max=input....
+while wynik<max:
+    pass
