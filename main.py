@@ -410,3 +410,28 @@
 #  poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
 #   linie w których znalazła poszukiwaną frazę wraz z numerem linii.
 #   Wyszukiwarka powinna być nieczula na wielkosc liter.
+
+# file_name='tadzio.txt'
+# phrase='tadeusz'
+# x=0
+# for line in open('tadzio.txt',encoding='utf-8'):
+#     x+=1
+#     if phrase.lower() in line.lower():
+#         print(x,line.strip())
+
+# file_name=input('podaj nazwę pliku:\n')
+# phrase=input('podaj szukaną frazę:\n')
+# x=0
+# for line in open(file_name,encoding='utf-8'):
+#     x+=1
+#     if phrase.lower() in line.lower():
+#         print(x,line.strip())
+
+print('hello')  #komentarz
+# tekst='siała baba mak'
+# print(tekst[0])
+# print(tekst[0:5])
+#.13 Napisz program który będzie od uzytkownika przyjmowal nazwę pliku z kodem pythona.
+# Program ma wyświetlić wszystkie linie które nie są w całości komentarzami
+# wraz z numerami tych linii w pliku
+
