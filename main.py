@@ -296,6 +296,35 @@
 #8. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby
 # 2 aż wartość  potęgi nie przekroczy wartości podanej przez użytkownika
 
-max=input....
-while wynik<max:
-    pass
+
+# max=int(input('ile max:\n'))
+# result=0
+# np=0
+# while result<max:
+#     np+=1
+#     result=pow(2,np)
+#     print(result)
+
+
+# max=int(input('ile max:\n'))
+# result=0
+# np=0
+# while result<max:
+#     print(result)
+#     np += 1
+#     result=pow(2,np)
+
+
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# print(tekst.upper())
+# print(tekst.lower())
+# print(tekst.title())
+# print(tekst.replace('a','X'))
+# print(tekst.lower().replace('a','X'))
+# print(tekst)
+# tekst=tekst.upper().replace('A','X').replace('E','Y')
+# print(tekst)
+
+#9.  Napisz program który przyjmie od użyszkodnika ciąg tekstowy
+# a następnie usunie z niego znaki ,.!? i wyświetli
+# powiększony do dużych liter na konsoli
