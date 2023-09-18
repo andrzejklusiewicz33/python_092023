@@ -365,8 +365,25 @@
 # print(len(t.strip()))
 
 
-for line in open('data.csv',encoding='utf-8'):
-    print(line.strip(), len(line.strip()))
+# for line in open('files/data.csv', encoding='utf-8'):
+#     if len(line.strip())>0:
+#         print(line.strip(), len(line.strip()))
 
 #10. Napisz program który wyświetli na konsoli niepuste linie
 # z pliku tekstowego którego nazwę poda użytkownik
+#
+# t="siała BABA mak, znowu BABA, a teraz duża BABA"
+# if "baba" in t.lower():
+#     print('jest baba')
+# else:
+#     print('nie ma baby')
+#
+# print(t.lower().count('baba'))
+# print(t.upper().count('BABA'))
+
+# text=open('tadzio.txt',encoding='utf-8').read()
+# print(text.upper())
+
+#11. Napisz program który zliczy ilość wystąpień małej
+# lub dużej wersji ciagu tekstowego podanego przez
+# użytkownika w pliku którego nazwę również poda użytkownik.
