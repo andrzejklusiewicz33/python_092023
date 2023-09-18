@@ -39,7 +39,18 @@
 # print('x='+str(x) )
 # print('x={}'.format(x))
 # print(f'x={x} y={y}')
-
-
+#
+# a=input('')
+# b=input('')
+# a,b=input(''),input('')
 #1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
 #   wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+#
+# first_name=input('Podaj imię:\n')
+# last_name=input('Podaj nazwisko:\n')
+# print(f'Witaj {first_name} {last_name}!')
+# print('Witaj {} {}!'.format(first_name,last_name))
+# print('Witaj '+first_name+' '+last_name+'!')
+# print('Witaj',first_name,last_name,'!')
+#print('Hello World!')
+
