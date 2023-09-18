@@ -54,3 +54,18 @@
 # print('Witaj',first_name,last_name,'!')
 #print('Hello World!')
 
+# x=input('dej liczbe:\n')
+# x=int(x)
+# print(x,type(x))
+# print(x/2)
+#
+# x=int(  input('dej liczbe:\n') )
+# print(x,type(x))
+# print(x/2)
+
+#print(round(1/3,2))
+#print(pow(10,3))
+#x=1.23
+#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika
+# jego masę w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
+
