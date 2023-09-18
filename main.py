@@ -62,10 +62,12 @@
 # x=int(  input('dej liczbe:\n') )
 # print(x,type(x))
 # print(x/2)
-
+#float
 #print(round(1/3,2))
 #print(pow(10,3))
 #x=1.23
 #2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika
 # jego masę w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
 
+height=float(input('podaj wzrost:\n'))
+bmi=72/pow(height,2)
