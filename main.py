@@ -156,10 +156,57 @@
 #   wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
 
 #
-height=float(input('podaj wzrost w metrach:\n'))
-weight=float(input('podaj masę w kilogramach:\n'))
-bmi=round(weight/pow(height,2),2)
-print(f'Twoje BMI={bmi}')
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach:\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'Twoje BMI={bmi}')
+# if bmi<16:
+#     print('wyglodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('waga ok')
+# elif bmi<30:
+#     print('nadwaga')
+# elif bmi<35:
+#     print('1 stopień przypakowania')
+# elif bmi<40:
+#     print('2 stopień przypakowania')
+# else:
+#     print('3 stopień przypakowania')
 
-# if bmi>18.5 and bmi<25:
+#
+# for x in range(3):
+#     print('siema!')
+
+
+#
+# for _ in range(3):
+#     print('siema!')
+
+
+# for x in range(1,11):
+#     print(f'siema! {x}')
+#
+# for x in range(1,11,2):
+#     print(f'siema! {x}')
+#
+# while True:
 #     pass
+
+#
+# while 1==1:
+#     pass
+#
+# x=1
+# while x<1000:
+#     x=x*2
+#     print(x)
+#
+# lista=['koza','nietoperz','toperz']
+# for e in lista:
+#     print(e)
+
+#5. Wyświetl 20 kolejnych potęg liczby 2
