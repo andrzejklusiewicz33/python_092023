@@ -1311,5 +1311,11 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 
 import os
+
+find_me='cośtam'
 for e in os.walk('G:\\'):
     print(e)
+    katalogi=e[1]
+    for k in katalogi:
+        pass
+
