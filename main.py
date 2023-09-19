@@ -721,3 +721,28 @@
 
 #19. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
 # Pierwszy element tej podlisty to numer potegi, a drugi to wartosc tej potegi dla liczby 2
+
+# lista=[]
+# for x in range(1,11):
+#     lista.append([x,pow(2,x)])
+# print(lista)
+#
+# print([ [x,pow(2,x)] for x in range(1,11)])
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     print(d.strip())
+
+#
+# string='2;Ferdynand;Kiepski;1.68;90'
+# lista=string.split(';')
+# print(lista)
+# print(lista[1].replace('e','X'))
+# print(lista[3],type(lista[3]))
+# print(float(lista[3])/2)
+#
+# hajs='hajs '
+# print(hajs*1000)
+
+string='2;Ferdynand;Kiepski;1.68;90'
+
+#20. Napisz program który z pliku dane.txt wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
