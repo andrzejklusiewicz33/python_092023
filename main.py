@@ -1177,3 +1177,13 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # 4. Wyświetlanko
 
 data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+for d in data:
+    h=float(d[3])
+    w=float(d[4])
+    bmi=round(w/ h ** 2,2)
+    d.append(bmi)
+#sortowanko
+for d in data:
+    print(d)
+
+
