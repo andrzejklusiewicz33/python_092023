@@ -935,3 +935,203 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 #24.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
 # posortuj listę i wyświetl jej zawartość element po elemencie
+# import random
+# data=[random.randint(1,1000) for _ in range(10)]
+# print(data)
+# data.sort()
+# print(data)
+# for d in data:
+#     print(d)
+
+#
+# import random
+# data=[random.randint(1,1000) for _ in range(10)]
+# print(data)
+# posortowane=sorted(data)
+# print(posortowane)
+# for d in posortowane:
+#     print(d)
+
+#
+#
+# import random
+# data=[random.randint(1,1000) for _ in range(10)]
+# for d in sorted(data):
+#     print(d)
+
+
+#
+# import random
+# for d in sorted( [random.randint(1,1000) for _ in range(10)] ):
+#     print(d)
+
+
+
+# import random
+# for d in sorted( [random.randint(1,1000) for _ in range(10)] ): print(d)
+
+#(a > b, 1,2)
+
+#if 1==1: print('true')
+#
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+#
+# print(result)
+# print(sorted(result))
+
+#
+# from operator import itemgetter
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+
+# import operator
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# operator.itemgetter
+
+#
+# from operator import itemgetter
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# print(result)
+# result.sort(key=itemgetter(1))
+# print(result)
+
+
+#
+# from operator import itemgetter
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# print(result)
+# posortowane=sorted(result,key=itemgetter(1))
+# print(posortowane)
+
+
+#
+# from operator import itemgetter
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# print(result)
+# posortowane=sorted(result,key=itemgetter(1),reverse=True)
+# print(posortowane)
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+# p=Person()
+# p.first_name='Andrew'
+# p.last_name='Klusiewicz'
+# print(p.last_name,p.first_name)
+#
+# class Person:
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+
+# p=Person('Andrzej','Klusiewicz')
+# print(p.last_name,p.first_name)
+
+
+
+
+# class Person:
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# data=[
+#     Person('Andrzej','Klusiewicz'),
+#     Person('Zenek','Martyniuk'),
+#     Person('Matka','Stalina'),
+#     Person('Maniek','Adowski')
+# ]
+# for d in data:
+#     print(d.first_name,d.last_name)
+#
+#
+#
+# from operator import itemgetter
+# class Person:
+#     def __init__(self, fn, ln):
+#         self.first_name = fn
+#         self.last_name = ln
+#
+#
+# data = [
+#     Person('Andrzej', 'Klusiewicz'),
+#     Person('Zenek', 'Martyniuk'),
+#     Person('Matka', 'Stalina'),
+#     Person('Maniek', 'Adowski')
+# ]
+#
+# data.sort(key=itemgetter(1))
+#
+# for d in data:
+#     print(d.first_name, d.last_name)
+#
+
+
+#
+# class Person:
+#     def __init__(self, fn, ln):
+#         self.first_name = fn
+#         self.last_name = ln
+#
+#
+# data = [
+#     Person('Andrzej', 'Klusiewicz'),
+#     Person('Zenek', 'Martyniuk'),
+#     Person('Matka', 'Stalina'),
+#     Person('Maniek', 'Adowski')
+# ]
+#
+# data.sort(key=lambda d:d.last_name)
+#
+# for d in data:
+#     print(d.first_name, d.last_name)
+#
+
+#
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# result.sort(key=lambda e:e[1].upper())
+# print(result)
+
+
+
+# def my_fun(x):
+#     return x[1]
+#
+# result=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B']
+# ]
+# result.sort(key=lambda e:my_fun(e))
+# print(result)
+
+#24. Wczytaj do listy kolejne wiersze z pliku data.csv.
+# Dane posortuj po wadze i wyswietl linia po linii na konsoli.
