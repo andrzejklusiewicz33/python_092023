@@ -1175,3 +1175,5 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # 2. Do każdego elementu listy dodać obliczone bmi
 # 3. Sortowanko
 # 4. Wyświetlanko
+
+data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
