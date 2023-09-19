@@ -665,3 +665,29 @@
 # print([e for e in  [random.randint(1,10) for _ in range(10)] if e%2==0 ])
 
 #17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+#
+# lista=[]
+# for x in range(1,11):
+#     element=pow(2,x)
+#     lista.append(element)
+# print(lista)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(pow(2,x))
+# print(lista)
+#
+# lista=[pow(2,x) for x in range(1,11)]
+# print(lista)
+# print([pow(2,x) for x in range(1,11)])
+
+#18. Umieść w liście wartości kolejnych tysięcy od 1000 do 100000.
+#. 1000,2000,3000,4000
