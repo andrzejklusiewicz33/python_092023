@@ -826,6 +826,23 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # for d in open('files/data.csv',encoding='utf-8'):
 #     result.append(  d.strip().split(';') )
 
-result=[d for d in open('files/data.csv',encoding='utf-8')]
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     print(r)
+
+#
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     print(r[3],type(r[3]),r[4],type(r[4]))
+#     print(pow(float(r[3]),2))
+#     print(r[3]*10)
+#     print(   float(r[3])*10  )
+
+#23. Dla każdego wpisu w pliku data.csv wyświetl na konsoli dane o
+#   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+
+
+result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
 for r in result:
     print(r)
+    w=float(r[3])
