@@ -1330,11 +1330,109 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 
 
+#
+# import os
+# find_me='C'
+# for e in os.walk('G:\\'):
+#     katalogi=e[1]
+#     for k in katalogi:
+#         if find_me.lower() in k.lower():
+#             print(e[0],k)
+# #
+# import os
+# print( os.path.getctime('G:\\whatever\\moto.txt') )
 
-import os
-find_me='C'
-for e in os.walk('G:\\'):
-    katalogi=e[1]
-    for k in katalogi:
-        if find_me.lower() in k.lower():
-            print(e[0],k)
+#
+# import os
+# find_me='whate'
+# for e in os.walk('G:\\'):
+#     katalogi=e[1]
+#     for k in katalogi:
+#         if find_me.lower() in k.lower():
+#             #print(e[0]+'\\'+k)
+#             print(os.path.join(e[0],k))
+
+#
+# import os
+# find_me='whate'
+# for e in os.walk('G:\\'):
+#     katalogi=e[1]
+#     pliki=e[2]
+#     for k in katalogi:
+#         if find_me.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in pliki:
+#         if find_me.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+
+
+
+# import os
+# find_me='whate'
+# for e in os.walk('G:\\'):
+#     for k in e[1]:
+#         if find_me.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if find_me.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+
+
+# import os
+# find_me=input('czego szukać?\n')
+# where=input('gdzie mam szukać?\n')
+# for e in os.walk(where):
+#     for k in e[1]:
+#         if find_me.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if find_me.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+#
+#
+# import os
+# for e in os.walk('g:\\'):
+#     for p in e[2]:
+#         if p.endswith('.txt'):
+#             full_path=os.path.join(e[0],p)
+#             x=0
+#             for line in open(full_path,encoding='utf-8'):
+#                 x+=1
+#                 if 'koza' in line:
+#                     print(f'line={x}',full_path,line)
+#
+# lista=[2,6,1,2,3]
+# lista.append(7777)
+# print(lista,type(lista))
+# krotka=(2,6,1,2,3)
+# krotka.append(5)
+# print(krotka,type(krotka))
+
+# lista=[2,6,1,2,3]
+# lista.sort()
+# krotka=(2,6,1,2,3)
+# posortowane=sorted(krotka)
+# print(posortowane)
+#
+# krotka=(2,6,1,2,3)
+# print(krotka)
+# lista=list(krotka)
+# print(lista)
+# #lista.sort()
+# lista.append('cośtam')
+# print(lista)
+# krotka=tuple(lista)
+# print(krotka)
+#
+# krotka=(2,6,1,2,3)
+# for k in krotka:
+#     print(k)
+# if 6 in krotka:
+#     print('jest')
+# print(krotka[4])
+# print(krotka[0:4])
+
+#27. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
+# Trzecią krotkę wypisz na konsoli
+
