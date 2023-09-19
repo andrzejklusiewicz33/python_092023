@@ -809,21 +809,23 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(result)
 # for r in result:
 #     print(r,r[1])
-
-result=[]
-for x in range(1,11):
-    result.append(x*1000)
-
-result=[x*1000 for x in range(1,11)]
-print(result)
+#
+# result=[]
+# for x in range(1,11):
+#     result.append(x*1000)
+#
+# result=[x*1000 for x in range(1,11)]
+# print(result)
 
 #22. ⦁	Korzystajac z list skladanych zaladuj do listy zawartosc pliku data.csv w taki sposób
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam   powinien byc listą.
-# Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
+# Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy  element po elemencie.
 
 
 # result=[]
 # for d in open('files/data.csv',encoding='utf-8'):
 #     result.append(  d.strip().split(';') )
-# for r in result:
-#     print(r)
+
+result=[d for d in open('files/data.csv',encoding='utf-8')]
+for r in result:
+    print(r)
