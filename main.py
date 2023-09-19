@@ -1170,3 +1170,8 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(lista)
 
 #25. Wyświetl na konsoli linia po linii dane z pliku data.csv ale posortowane  malejąco wg. bmi
+
+# 1. Wczytać dane z pliku jako listę list
+# 2. Do każdego elementu listy dodać obliczone bmi
+# 3. Sortowanko
+# 4. Wyświetlanko
