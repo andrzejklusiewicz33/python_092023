@@ -603,3 +603,65 @@
 # [1,2]
 # [2,4]
 # [3,8]
+#
+# lista=[]
+# for x in range(1,11):
+#     element=[x,pow(2,x)]
+#     lista.append(element)
+#
+# for l in lista:
+#     print(l)
+
+
+
+# lista=[]
+# for x in range(1,11):
+#     lista.append([x,pow(2,x)])
+#
+# for l in lista:
+#     print(l)
+
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+#
+# print([x for x in range(1,11)])
+#
+# print([x*1000 for x in range(1,11)])
+#
+# import random
+# lista=[random.randint(1,10) for _ in range(10)]
+# print(lista)
+#
+#
+# print([x for x in range(1,11) if x%2==0])
+#
+# print([x*1000 for x in range(1,11) if x%2==0])
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+# inna=[e for e in lista if e%2==0]
+# print(inna)
+#
+# inna=[e*1000 for e in lista if e%2==0]
+# print(inna)
+# import random
+# lista=[]
+# for _ in range(10):
+#     x=random.randint(1,10)
+#     if x%2==0:
+#         lista.append(x)
+# print(lista)
+#
+# lista=[random.randint(1,10) for _ in range(10)]
+# lista2=[e for e in lista if e%2==0]
+# print( lista2 )
+#
+# print([e for e in  [random.randint(1,10) for _ in range(10)] if e%2==0 ])
+
+#17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
