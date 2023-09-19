@@ -555,3 +555,21 @@
 
 #15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+# import random
+#
+# print(random.randint(1,3))
+# print(random.randint(1,3))
+
+# import random
+# l1=[]
+# l2=[]
+# for _ in range(10):
+#     l1.append(random.randint(1,10))
+#     l2.append(random.randint(1, 10))
+# print(l1)
+# print(l2)
+# l3=[*l1,*l2]
+# print(l3)
+# l1.extend(l2)
+# print(l1)
