@@ -427,7 +427,7 @@
 #     if phrase.lower() in line.lower():
 #         print(x,line.strip())
 
-print('hello')  #komentarz
+#print('hello')  #komentarz
 # tekst='siała baba mak'
 # print(tekst[0])
 # print(tekst[0:5])
@@ -446,10 +446,25 @@ print('hello')  #komentarz
 # for line in open(file_name,encoding='utf-8'):
 #     if  line.strip()[0]!='#' and len(line.strip())>0:
 #         print(line)
+#
+# file_name=input('podaj nazwę pliku:\n')
+# x=0
+# for line in open(file_name,encoding='utf-8').readlines():
+#     x+=1
+#     if  len(line.strip())>0 and line.strip()[0]!='#':
+#         print(x,line.strip())
+#
+# lista=[]
+# lista=list()
+# lista=[1,2,'tekst',[3,4] ]
+# print(lista,type(lista))
+# lista.append(88888)
+# zmienna=123
+# lista.append(zmienna)
+# for e in lista:
+#     print(e)
+# print(f'pozycja 2={lista[2]}')
+# print(lista[0:2])
 
-file_name=input('podaj nazwę pliku:\n')
-x=0
-for line in open(file_name,encoding='utf-8'):
-    x+=1
-    if  len(line.strip())>0 and line.strip()[0]!='#':
-        print(x,line.strip())
+#14. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#  Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
