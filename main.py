@@ -841,8 +841,97 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #23. Dla każdego wpisu w pliku data.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 
+#
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     print(r)
+#     w=float(r[3])
 
-result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
-for r in result:
-    print(r)
-    w=float(r[3])
+
+#
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     h=float(r[3])
+#     w=float(r[4])
+#     bmi=round(w/pow(h,2),2)
+#     print(r,bmi)
+
+
+
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     h=float(r[3])
+#     w=float(r[4])
+#     bmi=round(w/pow(h,2),2)
+#     r.append(bmi)
+#     print(r)
+
+
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     bmi=round(float(r[4])/pow(float(r[3]),2),2)
+#     r.append(bmi)
+#     print(r)
+
+
+# result=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# for r in result:
+#     r.append(round(float(r[4])/pow(float(r[3]),2),2))
+#     print(r)
+#
+# lista=[1,4,2,8,1,2]
+# print(lista)
+# lista.sort()
+# print(lista)
+
+#
+# lista=[1,4,2,8,1,2]
+# print(lista)
+# posortowane=sorted(lista)
+# print(posortowane)
+# print(lista)
+
+
+# lista=[1,4,2,8,1,2]
+# print(lista)
+# lista.sort()
+# print(lista)
+# lista.reverse()
+# print(lista)
+#
+# lista=[1,4,2,8,1,2]
+# print(lista)
+# lista.sort(reverse=True)
+# print(lista)
+#
+# #
+# lista=[1,4,2,8,1,2]
+# print(lista)
+# posortowane=sorted(lista,reverse=True)
+# print(posortowane)
+
+#
+# lista=['z','b','d','a']
+# print(lista)
+# lista.sort()
+# print(lista)
+
+
+# lista=['z','b','d','a',1]
+# print(lista)
+# lista.sort()
+# print(lista)
+#
+# lista=['z','b','d','a','1']
+# print(lista)
+# lista.sort()
+# print(lista)
+
+#
+# lista=['z','b','d','a',str(1)]
+# print(lista)
+# lista.sort()
+# print(lista)
+
+#24.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
+# posortuj listę i wyświetl jej zawartość element po elemencie
