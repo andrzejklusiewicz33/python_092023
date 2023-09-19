@@ -1317,5 +1317,6 @@ for e in os.walk('G:\\'):
     print(e)
     katalogi=e[1]
     for k in katalogi:
+        #tu sprawdz czy find_me znajduje się w k (lower() maybe)
         pass
 
