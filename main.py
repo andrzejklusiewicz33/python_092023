@@ -1435,4 +1435,10 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #27. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
 # druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
 # Trzecią krotkę wypisz na konsoli
+#
+# krotka=(e for e in range(1,11))
+# print(krotka)
 
+
+krotka=tuple([e for e in range(1,11)])
+print(krotka)
