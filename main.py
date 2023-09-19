@@ -746,8 +746,59 @@
 string='2;Ferdynand;Kiepski;1.68;90'
 
 #20. Napisz program który z pliku data.csv wyświetli powiekszone imiona i nazwiska
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().split(';')
+#     print(lista[1])
+#     print(lista[1].replace('a','X'))
 
-for d in open('files/data.csv',encoding='utf-8'):
-    lista=d.strip().split(';')
-    print(lista[1])
-    print(lista[1].replace('a','X'))
+
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     print(d.strip().split(';'))
+#     print(d.strip().split(';')[1].upper())
+
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     print(d.strip().split(';'))
+#     imie=d.strip().split(';')[1]
+#     nazwisko=d.strip().split(';')[2]
+#     print(imie.upper(),nazwisko.upper())
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().split(';')
+#     print(lista[1].upper(),lista[2].upper())
+
+
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().upper().split(';') #powiekszamy caly wiersz
+#     print(lista[1],lista[2])
+
+
+
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().upper().split(';') #powiekszamy caly wiersz
+#     print(lista[1],lista[2])
+#
+#
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().split(';').upper() #to nie ma prawa zadzialac - lancuchowanie funkcji i typy danych
+#     print(lista[1],lista[2])
+#
+# #tak najlepiej
+# for d in open('files/data.csv',encoding='utf-8'):
+#     lista=d.strip().split(';')
+#     print(lista[1].upper(),lista[2].upper())
+
+#
+# import time
+#
+# poczatek=time.time()
+# print('start')
+# time.sleep(3)
+# print('koniec')
+# koniec=time.time()
+# print(f'czas trwania {koniec-poczatek}s')
+
+#21. Zaladuj do postaci listy list zawartosc pliku data.csv
