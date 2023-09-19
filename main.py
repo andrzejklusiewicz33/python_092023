@@ -468,3 +468,90 @@
 
 #14. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 #  Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+#
+# result=[]
+# for x in range(1,11):
+#     result.append(pow(2,x))
+# for r in result:
+#     print(r)
+
+
+#
+# result=[]
+# for x in range(1,11):
+#     result.append(pow(2,x))
+#     print(result[x-1]) #fuuuuuu
+
+# result=[]
+# for x in range(1,11):
+#     p=pow(2,x)
+#     result.append(p)
+#     print(p)
+#
+# result=[]
+# for x in range(1,11):
+#     result.append(pow(2,x))
+# for i in range(0,len(result)):
+#     print(result[i])
+
+#import pandas
+# import random
+# for x in range(10):
+#     print(random.randint(1,1000))
+#     print(random.random()*10)
+#
+# x=1
+# y=x
+#
+# l1=[1,2,3]
+# l2=l1
+# l1.clear()
+# print(l1)
+# print(l2)
+
+#
+# l1=[1,2,3]
+# l2=l1.copy()
+# l1.clear()
+# print(l1)
+# print(l2)
+
+# l1=[1,2,3]
+# l2=[4,5,6]
+# # print(l1,type(l1))
+# # print(l1)
+# # print(*l1)
+# l3=[  l1,l2  ]
+# print(l3)
+# for e in l3:
+#     print(e)
+# def fun(*args):
+#     for a in args:
+#         print(a)
+#
+# fun(1,'nietoperz','lubie','pierogi')
+
+#
+# l1=[1,2,3]
+# l2=[4,5,6]
+# l3=[  l1,l2  ]
+# print(l3)
+# for e in l3:
+#     print(e)
+
+
+# l1=[1,2,3]
+# l2=[4,5,6]
+# l3=[  *l1,*l2  ]
+# print(l3)
+# for e in l3:
+#     print(e)
+
+# l1=[1,2,3]
+# l2=[4,5,6]
+# l1.extend(l2)
+# print(l1)
+
+
+#15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
