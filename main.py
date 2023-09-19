@@ -817,7 +817,7 @@ for x in range(1,11):
 result=[x*1000 for x in range(1,11)]
 print(result)
 
-#22. ⦁	Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.txt w taki sposób
+#22. ⦁	Korzystajac z list skladanych zaladuj do listy zawartosc pliku data.csv w taki sposób
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam   powinien byc listą.
 # Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
 
