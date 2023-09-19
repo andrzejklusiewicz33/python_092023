@@ -1175,15 +1175,141 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # 2. Do każdego elementu listy dodać obliczone bmi
 # 3. Sortowanko
 # 4. Wyświetlanko
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# for d in data:
+#     h=float(d[3])
+#     w=float(d[4])
+#     bmi=round(w/ h ** 2,2)
+#     d.append(bmi)
+# data.sort(key=lambda e:e[5])
+# for d in data:
+#     print(d)
 
-data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
-for d in data:
-    h=float(d[3])
-    w=float(d[4])
-    bmi=round(w/ h ** 2,2)
-    d.append(bmi)
-#sortowanko
-for d in data:
-    print(d)
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# for d in data:
+#     h=float(d[3])
+#     w=float(d[4])
+#     bmi=round(w/ h ** 2,2)
+#     d.append(bmi)
+# data.sort(key=lambda e:e[5],reverse=True)
+# for d in data:
+#     print(d)
 
 
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# for d in data: d.append(round(float(d[4])/ float(d[3]) ** 2,2))
+# data.sort(key=lambda e:e[5],reverse=True)
+# for d in data:
+#     print(d)
+
+
+
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# for d in data:
+#     d.append(round(float(d[4])/ float(d[3]) ** 2,2))
+# data.sort(key=lambda e:e[5],reverse=True)
+# for d in data:
+#     print(d)
+#
+# import os
+# os.mkdir('g:\\whatever')
+#
+# import os
+# for e in os.walk('G:\\'):
+#     print(e)
+#
+# lista=['a','b','c']
+# print(lista[1])
+# krotka=('a','b','c')
+# print(krotka[1])
+#krotka.append('cośtam') #to nie zadziala bo to krotka (niemutowalna)
+
+
+
+# import os
+# for e in os.walk('G:\\'):
+#     print(e)
+#
+# import os
+# for e in os.walk('G:\\'):
+#     print(e[0])
+
+#
+# import os
+# for e in os.walk('G:\\'):
+#     print(e)
+
+
+#
+# import os
+# for e in os.walk('G:\\'):
+#     sciezka=e[0]
+#     pliki = e[2]
+#     print(sciezka,'pliki=',pliki)
+#     for p in pliki:
+#         if p=='moto.txt':
+#             print(f'znalazłem w {sciezka}')
+
+#
+# import re
+# cos='aaaaaa 1234 aaaaaa'
+# print(re.findall('\d{1,}',cos))
+
+#
+# import os
+# for e in os.walk('G:\\'):
+#     sciezka=e[0]
+#     pliki = e[2]
+#     print(sciezka,'pliki=',pliki)
+#     for p in pliki:
+#         if p=='moto.txt':
+#             print(f'znalazłem w {sciezka}')
+
+#
+# lista=['cos','toperz','nietoperz','moto','moto.txt','moto.png','moto.wtf','cos jeszcze','cos tam jeszcze innego']
+# if 'moto' in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+
+#
+# lista=['cos','toperz','nietoperz','moto.txt','moto.png','moto.wtf','cos jeszcze','cos tam jeszcze innego']
+# if 'moto' in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+
+# lista=['cos','toperz','nietoperz','moto.txt','moto.png','moto.wtf','cos jeszcze','cos tam jeszcze innego']
+#
+# string='siała baba mak'
+# if 'baba' in string:
+#     print('jest baba')
+
+# lista=['cos','toperz','nietoperz','moto.txt','moto.png','moto.wtf','cos jeszcze','cos tam jeszcze innego']
+# for l in lista:
+#     if 'moto' in l:
+#         print(l, 'tu jest')
+#     else:
+#         print(l,'tu nie ma')
+
+# lista=['cos','toperz','nietoperz','Moto.txt','mOTO.png','moto.wtf','cos jeszcze','cos tam jeszcze innego']
+# for l in lista:
+#     if 'moto'.lower() in l.lower():
+#         print(l, 'tu jest')
+#     else:
+#         print(l,'tu nie ma')
+
+#26. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę - wraz ze ścieżkami.
+# Wyszukiwarka ma być nieczuła na wielkość liter
+
+
+import os
+for e in os.walk('G:\\'):
+    print(e)
