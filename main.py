@@ -1440,5 +1440,49 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(krotka)
 
 
-krotka=tuple([e for e in range(1,11)])
-print(krotka)
+# krotka=tuple([e for e in range(1,11)]
+# print(krotka)
+#
+# import random
+# k1=tuple([random.randint(1,10) for x in range(1,11)])
+# k2=tuple([random.randint(11,21) for x in range(1,11)])
+# k3=(*k1,*k2)
+# print(*k1)
+# print(*k2)
+# print(*k3)
+#
+# def fun():
+#     import random
+#     result=[]
+#     while True:
+#         result.append(random.randint(1,10))
+#     return result
+#
+# r=fun()
+
+# def generator():
+#     import random
+#     while True:
+#         yield random.randint(1,10)
+#
+# for g in generator():
+#     print(g)
+
+#
+# krotka = (e for e in range(1, 11))
+# print(type(krotka))
+#
+# krotka = tuple([e for e in range(1, 11)])
+# print(type(krotka))
+
+
+#27. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
+# Trzecią krotkę wypisz na konsoli
+import random
+k1=[random.randint(1,10) for _ in range(10)]
+k2=[random.randint(11,20) for _ in range(10)]
+print(k1)
+print(k2)
+k3=[*k1,*k2]
+print(k3)
