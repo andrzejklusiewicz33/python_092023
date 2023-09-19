@@ -691,3 +691,33 @@
 
 #18. Umieść w liście wartości kolejnych tysięcy od 1000 do 100000.
 #. 1000,2000,3000,4000
+#
+# lista=[]
+# for x in range(1,101):
+#     lista.append(x*1000)
+#
+# print(lista)
+#
+# lista=[x*1000 for x in range(1,101)]
+# print(lista)
+#
+# lista=[x for x in range(1000,100001,1000)]
+# print(lista)
+
+# lista=[]
+# for x in range(1,11):
+#     element=[x,x*1000]
+#     lista.append(element)
+# print(lista)
+#
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append([x,x*1000])
+# print(lista)
+#
+# lista=[[x,x*1000] for x in range(1,11)]
+# print(lista)
+
+#19. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
+# Pierwszy element tej podlisty to numer potegi, a drugi to wartosc tej potegi dla liczby 2
