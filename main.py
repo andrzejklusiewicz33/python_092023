@@ -1135,3 +1135,38 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 #24. Wczytaj do listy kolejne wiersze z pliku data.csv.
 # Dane posortuj po wadze i wyswietl linia po linii na konsoli.
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# for d in data:
+#     print(d)
+
+# from operator import itemgetter
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# data.sort(key=itemgetter(4))
+# for d in data:
+#     print(d)
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# data.sort(key=lambda x:x[4])
+# for d in data:
+#     print(d)
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv',encoding='utf-8')]
+# data.sort(key=lambda x:float(x[4]))
+# for d in data:
+#     print(d)
+
+#
+# lista=[22,11,1,2]
+# lista.sort()
+# print(lista)
+#
+#
+#
+# lista=['22','11','1','2']
+# lista.sort()
+# print(lista)
+
+#25. Wyświetl na konsoli linia po linii dane z pliku data.csv ale posortowane  malejąco wg. bmi
