@@ -802,3 +802,7 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(f'czas trwania {koniec-poczatek}s')
 
 #21. Zaladuj do postaci listy list zawartosc pliku data.csv
+
+lista=[]
+for d in open('files/data.csv',encoding='utf-8'):
+    print(d.strip())
