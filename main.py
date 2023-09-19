@@ -1310,13 +1310,31 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # Wyszukiwarka ma być nieczuła na wielkość liter
 
 
-import os
+# import os
+#
+# find_me='cośtam'
+# for e in os.walk('G:\\'):
+#     print(e)
+#     katalogi=e[1]
+#     for k in katalogi:
+#         #tu sprawdz czy find_me znajduje się w k (lower() maybe)
+#         pass
 
-find_me='cośtam'
+# #os.path.join
+# import os
+# katalog='g:\\costam'
+# plik='jakistam'
+# print(katalog,plik)
+# print(os.path.join(katalog,plik))
+
+
+
+
+
+import os
+find_me='C'
 for e in os.walk('G:\\'):
-    print(e)
     katalogi=e[1]
     for k in katalogi:
-        #tu sprawdz czy find_me znajduje się w k (lower() maybe)
-        pass
-
+        if find_me.lower() in k.lower():
+            print(e[0],k)
