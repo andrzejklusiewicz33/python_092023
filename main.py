@@ -745,4 +745,7 @@
 
 string='2;Ferdynand;Kiepski;1.68;90'
 
-#20. Napisz program który z pliku dane.txt wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
+#20. Napisz program który z pliku data.csv wyświetli powiekszone imiona i nazwiska
+
+for d in open('files/data.csv',encoding='utf-8'):
+    print(d.strip())
