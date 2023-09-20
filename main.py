@@ -1856,5 +1856,8 @@ import psycopg2
 # ⦁	Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze
 # a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
-
+#
 data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
+cf=dict()
+for d in data:
+    print('klucz=',d[0],'wartosc=',d[1])
