@@ -1919,9 +1919,67 @@ import psycopg2
 #   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
 
 #print(dane['Andrzej Klusiewicz'])
+#
+# data=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# sl=dict()
+# for d in data:
+#     key=d[1]+" "+d[2]
+#     value=d
+#     sl[key]=value
+# for k in sl:
+#     print(k,sl[k])
 
-data=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
-for d in data:
-    print(d)
-    key=d[1]+" "+d[2]
-    print(key)
+
+#
+# data=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
+# sl=dict()
+# for d in data:
+#     sl[d[1]+" "+d[2]]=d
+# for k in sl:
+#     print(k,sl[k])
+
+
+#
+# sl=dict()
+# for d in [d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]:
+#     sl[d[1]+" "+d[2]]=d
+# for k in sl:
+#     print(k,sl[k])
+#
+# linia='1*Andrzej*Klusiewicz'
+# print(linia,type(linia))
+# lista=linia.split('*')
+# print(lista,type(lista))
+
+#39. ⦁	Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
+#    Wynik powinien byc posortowany malejąco wg ilosci wystapien
+#    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej wspólnej listy.
+#       Czyli po prostu lista wszystkich słów (z powtórzeniami)
+#       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+#       Zunifikuj tez wielkosc liter
+#       wynik: ['slowo1','slowo2','tadeusz','cokolwiek']
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#    c) Przepakuj dane ze słownika do listy i posortuj.
+#
+#
+
+# str='a b c\nd'
+# print(str.split())
+# Tadeusz
+# Tadeusz!
+# Tadeusz?
+# Tadeusz.
+#
+# Slowo
+# slowo
+#
+# sl=dict()
+# sl['key']='cośtam'
+#
+# if 'key' in sl:
+#     print('jest')
+# else:
+#     print('nie ma')
