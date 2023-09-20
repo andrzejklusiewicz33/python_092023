@@ -1556,3 +1556,43 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #29 ⦁	Wygeneruj dwa zestawy, dodaj do nich po 20
 # (w przypadku duplikatów zestaw może być mniejszy niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
+#
+# import random
+# z1=set()
+# z2=set()
+# for _ in range(20):
+#     z1.add(random.randint(1,40))
+#     z2.add(random.randint(1, 40))
+#
+# print('czesc wspolna',z2.intersection(z1))
+# print('suma',z1.union(z2))
+# print('roznica z1-z2',z1.difference(z2))
+# print('roznica z2-z1',z2.difference(z1))
+#
+#
+# import random
+# z1=set([random.randint(1,40) for _ in range(20)])
+# z2=set([random.randint(1,40) for _ in range(20)])
+#
+#
+# print('czesc wspolna',z2.intersection(z1))
+# print('suma',z1.union(z2))
+# print('roznica z1-z2',z1.difference(z2))
+# print('roznica z2-z1',z2.difference(z1))
+#
+
+#
+# import random
+# z1={random.randint(1,40) for _ in range(20)}
+# z2={random.randint(1,40) for _ in range(20)}
+#
+#
+# print('czesc wspolna',z2.intersection(z1))
+# print('suma',z1.union(z2))
+# print('roznica z1-z2',z1.difference(z2))
+# print('roznica z2-z1',z2.difference(z1))
+
+
+#30 ⦁	Zduplikuj jeden z wierszy w pliku data.csv.
+# Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
+# Nastepnie przejdz po tej liscie wynikowej i wyswietl jej elementy.
