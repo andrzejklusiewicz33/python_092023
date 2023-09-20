@@ -1479,11 +1479,13 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #27. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
 # druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
 # Trzecią krotkę wypisz na konsoli
-import random
-k1=tuple([random.randint(1,10) for _ in range(10)])
-k2=tuple([random.randint(11,20) for _ in range(10)])
-print(k1,type(k1))
-print(k2,type(k2))
-#k3=(*k1,*k2)
-k3=tuple([*k1,*k2])
-print(k3,type(k3))
+# import random
+# k1=tuple([random.randint(1,10) for _ in range(10)])
+# k2=tuple([random.randint(11,20) for _ in range(10)])
+# print(k1,type(k1))
+# print(k2,type(k2))
+# #k3=(*k1,*k2)
+# k3=tuple([*k1,*k2])
+# print(k3,type(k3))
+
+#28. ⦁	Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku data.csv
