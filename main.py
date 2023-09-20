@@ -1618,3 +1618,41 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # for r in list(set([tuple(e.strip().split(';')) for e in open('files/data.csv',encoding='utf-8')])):
 #     print(r)
 
+# file=open('results.csv',mode='w',encoding='utf-8')
+# file.close()
+
+# with open('results.csv',mode='w',encoding='utf-8') as file:
+#     pass
+# print('ok')
+#
+# with open('results.csv',mode='w',encoding='utf-8') as file:
+#     file.write('whatever')
+# print('ok')
+
+#
+# with open('results.csv',mode='w',encoding='utf-8') as file:
+#     for x in range(1,11):
+#         file.write(f'x={x}\n')
+# print('ok')
+
+#
+# element=['1','Andrzej','Klusiewicz',1.76,80]
+# string=f'{element[0]};{element[1]};{element[2]};{element[3]};{element[4]}\n'
+# print(string)
+#
+# with open('results.csv',mode='w',encoding='utf-8') as file:
+# print('ok')
+
+#
+# element=['1','Andrzej','Klusiewicz','1.76','80']
+# string=f'{element[0]};{element[1]};{element[2]};{element[3]};{element[4]}\n'
+# nowy_string=";".join(element)
+# print(string)
+# print(nowy_string)
+
+#
+# element=['1','Andrzej','Klusiewicz',str(1.76),str(80)]
+# nowy_string=";".join(element)
+# print(nowy_string)
+
+#31. Przepisz zawartość data.csv do pliku results.csv linia po linii
