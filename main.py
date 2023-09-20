@@ -1488,4 +1488,71 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # k3=tuple([*k1,*k2])
 # print(k3,type(k3))
 
-#28. ⦁	Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku data.csv
+#28. ⦁	Załaduj zawartosc data.csv do postaci listy krotek, a nasterpnie przeiteruj
+#osobna petla po tej liscie i wyswietl jej elementy.
+#
+# # result=[]
+# # for l in open('files/data.csv',encoding='utf-8'):
+# #     result.append(l.strip().split(';'))
+#
+# result=[l.strip().split(';') for l in open('files/data.csv',encoding='utf-8')]
+#
+# for r in result:
+#     print(r)
+
+#
+# result=[]
+# for l in open('files/data.csv',encoding='utf-8'):
+#     result.append(    tuple(l.strip().split(';'))   )
+
+# result=[ tuple(l.strip().split(';')) for l in open('files/data.csv',encoding='utf-8')]
+#
+# for r in result:
+#     print(r)
+#
+# print(result)
+#
+# lista=[1,1,1,1,2,2,2,2]
+# zbior={1,1,1,1,2,2,2,2}
+#slownik={"klucz1": 'costam', "klucz2": 12334}
+#
+# print(lista)
+# print(zbior)
+
+
+# lista=[1,1,1,1,2,2,2,2]
+# zbior=set(lista)
+# zbior.add(3)
+# zbior.add(3)
+# zbior.add(3)
+# print(zbior)
+
+#
+# z1={1,2,3,4}
+# z2={3,4,5,6}
+# print('czesc wspolna',z1.intersection(z2))
+# print('czesc wspolna',z2.intersection(z1))
+# print('suma',z1.union(z2))
+# print('roznica z1-z2',z1.difference(z2))
+# print('roznica z2-z1',z2.difference(z1))
+
+#
+# lista=[1,2,2,3,3,3,3,3,4,4,4,4]
+# z=set(lista)
+# print(z)
+# lista=list(z)
+# print(lista)
+#
+# lista=[1,2,2,3,3,3,3,3,4,4,4,4]
+# lista=list(set(lista))
+# print(lista)
+
+#
+# lista=list(set([1,2,2,3,3,3,3,3,4,4,4,4]))
+# print(lista)
+#
+# print(list(set([1,2,2,3,3,3,3,3,4,4,4,4])))
+
+#29 ⦁	Wygeneruj dwa zestawy, dodaj do nich po 20
+# (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
