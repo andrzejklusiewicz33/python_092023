@@ -1820,5 +1820,16 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # from faker import Faker
 # f=Faker("PL_pl")
 # print(f.first_name(),f.last_name(),f.company(),f.email(),f.city())
+# print(f.paragraph())
 
 #36. Wygeneruj plik csv z 10000 wierszy zawieracymi id, imie, nazwisko, nazwa firmy, email, telefon, miasto
+
+import psycopg2
+
+from faker import Faker
+f=Faker("PL_pl")
+with open('persons.csv',encoding='utf-8',mode='w') as file:
+    for x in range(1,10001):
+        lcsv=f'{x};{f.first_name()};{f.last_name()};{f.company()};{f.email()};{f.phone_number()};{f.city()}'
+        #print(lcsv)
+        file.write(lcsv+"\n")

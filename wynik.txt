@@ -1,0 +1,10 @@
+1,Tymoteusz,Lenda,Sopata-Barcz i syn s.c.,treimann@example.org,Brzeg
+8,Kamil,Wojtarowicz,Gabinety Misior,kochnik@example.com,Tarnów
+1,Nataniel,Gietka,Góraj-Kunka Sp.j.,swilkos@example.com,Brodnica
+9,Ernest,Wlizło,Spółdzielnia Dycha,piotrzbik@example.org,Kętrzyn
+1,Oskar,Bortkiewicz,Bender S.A.,polniktymon@example.net,Dębica
+8,Robert,Łukasz,Stowarzyszenie Surdyk-Reszke Sp. z o.o.,arkadiuszczapiga@example.org,Puławy
+2,Przemysław,Paw,Obarzanek S.A.,karinakral@example.org,Zabrze
+6,Konrad,Jereczek,Boruc s.c.,cyreklukasz@example.net,Włocławek
+4,Artur,Śliz,Pachowicz-Banak S.A.,lachaczjulita@example.org,Zduńska Wola
+2,Juliusz,Waszczyk,PPUH Kręcisz,laszkiewiczmaurycy@example.net,Słupsk
