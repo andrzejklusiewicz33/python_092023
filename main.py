@@ -1825,11 +1825,35 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #36. Wygeneruj plik csv z 10000 wierszy zawieracymi id, imie, nazwisko, nazwa firmy, email, telefon, miasto
 
 import psycopg2
+#
+# from faker import Faker
+# f=Faker("PL_pl")
+# with open('persons.csv',encoding='utf-8',mode='w') as file:
+#     for x in range(1,10001):
+#         lcsv=f'{x};{f.first_name()};{f.last_name()};{f.company()};{f.email()};{f.phone_number()};{f.city()}'
+#         #print(lcsv)
+#         file.write(lcsv+"\n")
 
-from faker import Faker
-f=Faker("PL_pl")
-with open('persons.csv',encoding='utf-8',mode='w') as file:
-    for x in range(1,10001):
-        lcsv=f'{x};{f.first_name()};{f.last_name()};{f.company()};{f.email()};{f.phone_number()};{f.city()}'
-        #print(lcsv)
-        file.write(lcsv+"\n")
+#print(config['listen_addresses'])
+#
+# d=dict()
+# d['encoding']='utf-8'
+# print(d['encoding'])
+# d['lista']=[1,2,3,4]
+# d['krotka']=(5,6,7,8)
+# d['liczba']=1234567890
+# print(d)
+# for k in d:
+#     print(k,d[k])
+# for v in d.values():
+#     print(v)
+
+#37. Stwórz plik config.conf i umieść w nim poniższe dane
+# encoding=utf-8
+# timezone=-2
+# color=black
+#
+# ⦁	Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze
+# a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
+
