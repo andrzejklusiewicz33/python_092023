@@ -1886,8 +1886,36 @@ import psycopg2
 # a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
 #
-data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
-cf=dict()
-for d in data:
-    print('klucz=',d[0],'wartosc=',d[1])
-    cf[klucz]=wartosc
+# data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
+# cf=dict()
+# for d in data:
+#     klucz=d[0]
+#     wartosc=d[1]
+#     print('klucz=', klucz, 'wartosc=', wartosc)
+#     cf[klucz]=wartosc
+# print(cf)
+#
+# data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
+# cf=dict()
+# for d in data:
+#     klucz=d[0]
+#     wartosc=d[1]
+#     cf[klucz]=wartosc
+# for k in cf:
+#     print(k,cf[k])
+
+
+# data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
+# cf=dict()
+# for d in data:
+#     cf[ d[0] ]=d[1]
+# # for k in cf:
+# #     print(k,cf[k])
+#
+# print(cf['encoding'])
+
+#38. ⦁	Wczytaj do słownika dane z pliku data.csv tak by kluczem
+# było imię sklejone z nazwiskiem rozdzielone spacja, a całe wiersze znalazły się w wartości
+#   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
+
+#print(dane['Andrzej Klusiewicz'])
