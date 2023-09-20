@@ -1596,13 +1596,25 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #30 ⦁	Zduplikuj jeden z wierszy w pliku data.csv.
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
 # Nastepnie przejdz po tej liscie wynikowej i wyswietl jej elementy.
+#
+# lista=[
+#     (1,'A'),
+#     (2,'B'),
+#     (1,'A')
+# ]
+#
+# print(lista)
+# lista=list(set(lista))
+# print(lista)
 
-lista=[
-    (1,'A'),
-    (2,'B'),
-    (1,'A')
-]
+#
+# result=[tuple(e.strip().split(';')) for e in open('files/data.csv',encoding='utf-8')]
+# result=list(set(result))
+# print(type(result))
+# for r in result:
+#     print(r)
 
-print(lista)
-lista=list(set(lista))
-print(lista)
+
+# for r in list(set([tuple(e.strip().split(';')) for e in open('files/data.csv',encoding='utf-8')])):
+#     print(r)
+
