@@ -1984,9 +1984,10 @@ import psycopg2
 # else:
 #     print('nie ma')
 
-notwanted=[',','.','!','?','/','%']
+all=open('tadzio.txt',encoding='utf-8').read()
+not_wanted=[',','.','!','?','/','%']
 text='siała!??? baba....,,,, mak////'
 print(text)
-for n in notwanted:
+for n in not_wanted:
     text=text.replace(n,'')
 print(text)
