@@ -1994,7 +1994,27 @@ import psycopg2
 #    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#
 
+# lista=['koza','nietoperz','czas na grzybobranie','koza']
+# print(lista.count('koza'))
+#
+# import time
+# s=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# not_wanted=[',','.','!','?','/','%',')','(','-',':']
+# for n in not_wanted:
+#     all=all.replace(n,'')
+# words=all.split()
+# sl=dict()
+# for w in words:
+#     x=words.count(w) #fuuuuu - złożoność obliczeniowa
+# k=time.time()
+# print(f'czas trwania {k-s}s')
+
+
+import time
+s=time.time()
 all=open('tadzio.txt',encoding='utf-8').read().lower()
 not_wanted=[',','.','!','?','/','%',')','(','-',':']
 for n in not_wanted:
@@ -2002,7 +2022,13 @@ for n in not_wanted:
 words=all.split()
 sl=dict()
 for w in words:
-    pass
+    if w in sl:
+        pass #zwiększ wartość dla tego klucza w słowniku o jeden
+    else:
+        pass #dodać do słownika wpis o takim kluczu jak to słowo z wartością 1
+k=time.time()
+print(f'czas trwania {k-s}s')
+
 
 
 # if 'key' in sl:
