@@ -1984,10 +1984,28 @@ import psycopg2
 # else:
 #     print('nie ma')
 
-all=open('tadzio.txt',encoding='utf-8').read()
-not_wanted=[',','.','!','?','/','%']
-text='siała!??? baba....,,,, mak////'
-print(text)
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# not_wanted=[',','.','!','?','/','%',')','(','-',':']
+# for n in not_wanted:
+#     all=all.replace(n,'')
+# words=all.split()
+# print(words)
+
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+
+all=open('tadzio.txt',encoding='utf-8').read().lower()
+not_wanted=[',','.','!','?','/','%',')','(','-',':']
 for n in not_wanted:
-    text=text.replace(n,'')
-print(text)
+    all=all.replace(n,'')
+words=all.split()
+sl=dict()
+for w in words:
+    pass
+
+
+# if 'key' in sl:
+#     print('jest')
+# else:
+#     print('nie ma')
