@@ -1692,7 +1692,10 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # Następnie przeiteruj po liście i zrzuć jej zawartość do pliku results.csv
 
 #https://github.com/andrzejklusiewicz33/python_092023/blob/main/main.py
+#
+# data=[e.replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]
+# with open('results.csv',encoding='utf-8',mode='w') as file:
+#     for d in data:
+#         file.write(d)
 
-data=[e for e in open('files/data.csv',encoding='utf-8')]
-for d in data:
-    print(d)
+#33. Przerób rozwiązanie poprzedniego ćwiczenia w taki sposób, by pozbyć się też duplikatów
