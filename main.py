@@ -1692,3 +1692,7 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # Następnie przeiteruj po liście i zrzuć jej zawartość do pliku results.csv
 
 #https://github.com/andrzejklusiewicz33/python_092023/blob/main/main.py
+
+data=[e for e in open('files/data.csv',encoding='utf-8')]
+for d in data:
+    print(d)
