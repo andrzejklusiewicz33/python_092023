@@ -1700,8 +1700,28 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 #33. Przerób rozwiązanie poprzedniego ćwiczenia w taki sposób, by pozbyć się też duplikatów
 
+#
+# data=list(set([e.strip().replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]))
+# with open('results.csv',encoding='utf-8',mode='w') as file:
+#     for d in data:
+#         file.write(f'{d}\n')
+#         print(d)
 
-data=[e.replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]
-with open('results.csv',encoding='utf-8',mode='w') as file:
-    for d in data:
-        file.write(d)
+
+# data=list(set([e.strip().replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]))
+# with open('results.csv',encoding='utf-8',mode='w') as file:
+#     x=0
+#     for d in data:
+#         x+=1
+#         if x<len(data):
+#             file.write(f'{d}\n')
+#         else:
+#             file.write(d)
+#         print(d)
+
+#34. Wyświetl na konsoli dane z pliku data.csv wzbogacone o bmi. Zadbaj po drodze
+#o usunięcie pustych linii, usunięcie duplikatów i zamianę ',' na '.'
+
+data=list(set([e.strip().replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]))
+for d in data:
+    print(d)
