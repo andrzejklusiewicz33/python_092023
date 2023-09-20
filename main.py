@@ -1958,7 +1958,7 @@ import psycopg2
 #       Czyli po prostu lista wszystkich słów (z powtórzeniami)
 #       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
 #       Zunifikuj tez wielkosc liter
-#       wynik: ['slowo1','slowo2','tadeusz','cokolwiek']
+#       wynik: ['slowo1','slowo2','tadeusz','cokolwiek','slowo1']
 #    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
