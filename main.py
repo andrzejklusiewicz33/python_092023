@@ -1656,3 +1656,25 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(nowy_string)
 
 #31. Przepisz zawartość data.csv do pliku results.csv linia po linii
+#
+# plik=open('results.csv',encoding='utf-8',mode='w')
+# for w in open('files/data.csv'):
+#     plik.write(w)
+
+
+#
+# with open('results.csv',encoding='utf-8',mode='w') as file:
+#     for w in open('files/data.csv'):
+#         file.write(w)
+#
+# data=[e for e in open('files/data.csv',encoding='utf-8')]
+# for d in data:
+#     print(d)
+
+#
+# data=[e for e in open('files/data.csv',encoding='utf-8')]
+# with open('results.csv',encoding='utf-8',mode='w') as file:
+#     for d in data:
+#         file.write(d)
+
+#32.
