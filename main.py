@@ -1890,3 +1890,4 @@ data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
 cf=dict()
 for d in data:
     print('klucz=',d[0],'wartosc=',d[1])
+    cf[klucz]=wartosc
