@@ -1857,3 +1857,4 @@ import psycopg2
 # a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
 
+data=[e.strip().split("=") for e in open('config.conf',encoding='utf-8')]
