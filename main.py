@@ -1919,3 +1919,7 @@ import psycopg2
 #   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
 
 #print(dane['Andrzej Klusiewicz'])
+
+data=[d for d in open('files/data.csv',encoding='utf-8')]
+for d in data:
+    print(d[1])
