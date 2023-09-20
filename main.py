@@ -1677,4 +1677,18 @@ string='2;Ferdynand;Kiepski;1.68;90'
 #     for d in data:
 #         file.write(d)
 
-#32.
+
+# result=[]
+# for l in open('files/data.csv',encoding='utf-8'):
+#      result.append(l)
+#
+# with open('results.csv',mode='w',encoding='utf-8') as file:
+#    for r in result:
+#         file.write(f'{r}')
+
+
+#32. Zaladuj zawartosc pliku data.csv do postaci listy stringów, ale
+# nie ładuj pustych linii i wszystkie wystąpienia "," zamień na ".".
+# Następnie przeiteruj po liście i zrzuć jej zawartość do pliku results.csv
+
+#https://github.com/andrzejklusiewicz33/python_092023/blob/main/main.py
