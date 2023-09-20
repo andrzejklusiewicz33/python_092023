@@ -1721,7 +1721,3 @@ string='2;Ferdynand;Kiepski;1.68;90'
 
 #34. Wyświetl na konsoli dane z pliku data.csv wzbogacone o bmi. Zadbaj po drodze
 #o usunięcie pustych linii, usunięcie duplikatów i zamianę ',' na '.'
-
-data=list(set([e.strip().replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]))
-for d in data:
-    print(d)
