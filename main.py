@@ -1809,3 +1809,10 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # dane z pliku data.csv wzbogacone o obliczone BMI,
 # bez duplikatów, pustych wierszy i rozwiązując problem podania
 # przecinka w miejsce kropki we wzroście i masie.
+
+data=list(set([e.strip().replace(',','.') for e in open('files/data.csv',encoding='utf-8') if len(e.strip())>0]))
+with open('results.csv',encoding='utf-8',mode='w') as file:
+    for d in data:
+        l=d.split(';')
+        l.append(str(round(float(l[4])/pow(float(l[3]),2),2)))
+        print(";".join(l))
