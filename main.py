@@ -1983,3 +1983,10 @@ import psycopg2
 #     print('jest')
 # else:
 #     print('nie ma')
+
+notwanted=[',','.','!','?','/','%']
+text='siała!??? baba....,,,, mak////'
+print(text)
+for n in notwanted:
+    text=text.replace(n,'')
+print(text)
