@@ -1554,5 +1554,5 @@ string='2;Ferdynand;Kiepski;1.68;90'
 # print(list(set([1,2,2,3,3,3,3,3,4,4,4,4])))
 
 #29 ⦁	Wygeneruj dwa zestawy, dodaj do nich po 20
-# (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# (w przypadku duplikatów zestaw może być mniejszy niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
