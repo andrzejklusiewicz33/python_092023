@@ -1920,6 +1920,8 @@ import psycopg2
 
 #print(dane['Andrzej Klusiewicz'])
 
-data=[d for d in open('files/data.csv',encoding='utf-8')]
+data=[d.strip().split(';') for d in open('files/data.csv',encoding='utf-8')]
 for d in data:
-    print(d[1])
+    print(d)
+    key=d[1]+" "+d[2]
+    print(key)
