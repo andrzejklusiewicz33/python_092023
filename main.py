@@ -2345,3 +2345,34 @@ import psycopg2
 #44. ⦁	Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
 # do 2 miejsc po przecinku BMI. W przypadku pojawienia się wyjątku,
 # wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
+#
+# def dodatnia_ujemna(x):
+#     if x<0:
+#         return 'ujemna'
+#     elif x==0:
+#         return 'zero'
+#     else:
+#         return 'dodatnia'
+#
+# print(dodatnia_ujemna(1))
+# print(dodatnia_ujemna(0))
+# print(dodatnia_ujemna(-1))
+#
+# import re
+# try:
+#     print(1/0)
+# except Exception as e :
+#     #print(type(e.with_traceback()))
+#     print(re.findall("'.*'",str(type(e)))[0].replace("'",''))
+
+def bmi(h,w):
+    try:
+        return round(w/pow(h,2),2)
+    except ....:
+        ....
+    except ....:
+        ....
+
+print(  bmi(1.76,80)  )
+print(  bmi(0,80)  )
+#print(  bmi(1.76,"gruby")  )
