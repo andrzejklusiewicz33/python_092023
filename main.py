@@ -2377,21 +2377,65 @@ import psycopg2
 # print(  bmi(0,80)  )
 # #print(  bmi(1.76,"gruby")  )
 
+#
+#
+# def bmi(h,w):
+#     try:
+#         return round(w/pow(h,2),2)
+#     except ZeroDivisionError:
+#         print('Podany wzrost wynosi 0')
+#         return -1
+#     except TypeError:
+#         print("Podane wartości muszą być liczbami")
+#         return -1
+#     except Exception as e:
+#         print(f"Inny wyjątek: {type(e)} {e}")
+#
+# a=1.75
+# b=90
+# try:
+#     print( bmi(a,b,1) )
+# except TypeError as t:
+#     print(t)
+#
+#
+# print("bmi=",  bmi(1.76,80)  )
+# print("bmi=",  bmi(0,80)  )
+# print("bmi=",  bmi(1.76,"gruby")  )
+#
+# def fun(arg):
+#     file=open(arg)
+#
+# fun('errors.csv')
+
+# def witacz(imie,nazwisko):
+#     print(f"Witaj {imie} {nazwisko}!")
+#
+# witacz('Andrzej','Klusiewicz')
 
 
-def bmi(h,w):
-    try:
-        return round(w/pow(h,2),2)
-    except ZeroDivisionError:
-        print('Podany wzrost wynosi 0')
-        return -1
-    except TypeError:
-        print("Podane wartości muszą być liczbami")
-        return -1
-    except Exception as e:
-        print(f"Inny wyjątek: {type(e)} {e}")
+# def witacz(imie,nazwisko="Nie podano"):
+#     print(f"Witaj {imie} {nazwisko}!")
+#
+# witacz("Andrzej","Klusiewicz")
+# witacz('Andrzej')
 
 
-print("bmi=",  bmi(1.76,80)  )
-print("bmi=",  bmi(0,80)  )
-print("bmi=",  bmi(1.76,"gruby")  )
+
+# def witacz(imie="Nie podano",nazwisko="Nie podano"):
+#     print(f"Witaj {imie} {nazwisko}!")
+#
+# witacz("Andrzej","Klusiewicz")
+# witacz('Andrzej')
+# witacz()
+
+# def witacz(imie="Nie podano",nazwisko): #fuuuuu
+#     print(f"Witaj {imie} {nazwisko}!")
+#
+# witacz("Andrzej","Klusiewicz")
+# witacz('Andrzej')
+
+
+#45. ⦁	 Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+  # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+  # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8
