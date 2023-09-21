@@ -2038,29 +2038,28 @@ import psycopg2
 #     print(sd)
 #) Przepakuj dane ze słownika do listy i posortuj.
 #
-import time
-s=time.time()
-all=open('tadzio.txt',encoding='utf-8').read().lower()
-not_wanted=[',','.','!','?','/','%',')','(','-','—',':']
-for n in not_wanted:
-    all=all.replace(n,'')
-words=all.split()
-sl=dict()
-for w in words:
-    if w in sl:
-        sl[w]=sl[w]+1 #sl[w]+=1
-    else:
-        sl[w]=1
-result=[]
-for k in sl:
-    row=[k,sl[k]]
-    result.append(row)
-#sortowanko
-for r in result:
-    print(r)
-
-k=time.time()
-print(f'czas trwania {k-s}s')
+# import time
+# s=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# not_wanted=[',','.','!','?','/','%',')','(','-','—',':']
+# for n in not_wanted:
+#     all=all.replace(n,'')
+# words=all.split()
+# sl=dict()
+# for w in words:
+#     if w in sl:
+#         sl[w]=sl[w]+1 #sl[w]+=1
+#     else:
+#         sl[w]=1
+# result=[]
+# for k in sl:
+#     row=[k,sl[k]]
+#     result.append(row)
+# result.sort(key=lambda e:e[1], reverse=True)
+# for r in result:
+#     print(r)
+# k=time.time()
+# print(f'czas trwania {k-s}s')
 
 # print(ord('C'))
 # print(chr(67))
@@ -2075,3 +2074,9 @@ print(f'czas trwania {k-s}s')
 #     print('nie ma')
 
 #klusiewicz@jsystems.pl
+#
+# print('start')
+# print(1/0)
+# print('koniec')
+
+#40. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
