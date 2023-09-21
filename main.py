@@ -2560,12 +2560,21 @@ import psycopg2
 #48. Oddeleguj do osobnego modulu "utils" funkcje z ostatnich 2 cwiczen (jedna zwaracajaca plik csv jako lista list,
 # druga przyjmujaca liste list i drukujaca na ekranie). Następnie odbierz dane od pierwszej funkcji
 # i przekaż do drugiej.
+#
+# import utils as u
+#
+# u.print_list( u.get_csv('files/data.csv')  )
+#
+# import dao.invoice_dao as idao
+# idao.get_all()
+#
+# from dao.invoice_dao import *
+# get_all()
 
-def get_csv(file_name,enc='utf-8',delimiter=';'):
-    return [e.strip().split(delimiter) for e in open(file_name,encoding=enc)]
+#import dao.invoice_dao
 
-def print_list(data):
-    for e in data:
-        print(e)
+#pl.jsystems.phoenix.dao
 
-print_list( get_csv('files/data.csv')  )
+#49. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było
+# podawać nazwy pakietu ani modułu.
