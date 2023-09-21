@@ -2619,9 +2619,30 @@ import psycopg2
 #50. Pobierz dane z https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
 # wyświetl na konsoli aktualny kurs franka i pole effectiveDate
 
-import requests
-response=requests.get('https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json')
-if response.status_code==200:
-    data=response.json()
-    found=data['rates'][0]
-    print(found)
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json')
+# if response.status_code==200:
+#     data=response.json()
+#     found=data['rates'][0]
+#     print(found['effectiveDate'],found['mid'])
+
+#51. ⦁	z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
+# literami "Python".
+#
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     data=response.json()
+#     for d in data:
+#         if "Python".lower() in d['tytul_szkolenia'].lower():
+#             print(d['tytul_szkolenia'],d['termin'],d['miasto'])
+
+
+
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for d in [e for e in response.json() if "Python".lower() in e['tytul_szkolenia'].lower()]:
+#          print(d['tytul_szkolenia'],d['termin'],d['miasto'])
+
