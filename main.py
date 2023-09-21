@@ -2364,15 +2364,34 @@ import psycopg2
 # except Exception as e :
 #     #print(type(e.with_traceback()))
 #     print(re.findall("'.*'",str(type(e)))[0].replace("'",''))
+#
+# def bmi(h,w):
+#     try:
+#         return round(w/pow(h,2),2)
+#     except ....:
+#         ....
+#     except ....:
+#         ....
+#
+# print(  bmi(1.76,80)  )
+# print(  bmi(0,80)  )
+# #print(  bmi(1.76,"gruby")  )
+
+
 
 def bmi(h,w):
     try:
         return round(w/pow(h,2),2)
-    except ....:
-        ....
-    except ....:
-        ....
+    except ZeroDivisionError:
+        print('Podany wzrost wynosi 0')
+        return -1
+    except TypeError:
+        print("Podane wartości muszą być liczbami")
+        return -1
+    except Exception as e:
+        print(f"Inny wyjątek: {type(e)} {e}")
 
-print(  bmi(1.76,80)  )
-print(  bmi(0,80)  )
-#print(  bmi(1.76,"gruby")  )
+
+print("bmi=",  bmi(1.76,80)  )
+print("bmi=",  bmi(0,80)  )
+print("bmi=",  bmi(1.76,"gruby")  )
