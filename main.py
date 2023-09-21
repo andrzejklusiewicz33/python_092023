@@ -2646,3 +2646,74 @@ import psycopg2
 #     for d in [e for e in response.json() if "Python".lower() in e['tytul_szkolenia'].lower()]:
 #          print(d['tytul_szkolenia'],d['termin'],d['miasto'])
 
+#psycopg2
+#cx_Oracle
+
+import psycopg2
+connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+#
+# select current_timestamp;
+#
+#
+# create table players_andrew(
+# 	player_id serial primary key,
+# 	first_name text not null,
+# 	last_name text not null,
+# 	height numeric not null,
+# 	weight numeric not null
+# );
+#
+# insert into players_andrew(first_name,last_name,height,weight)
+# values ('Andrzej','Klusiewicz',1.76,80);
+#
+# insert into players_andrew(first_name,last_name,height,weight)
+# values ('Chuck','Norris',1.82,78);
+#
+# insert into players_andrew(first_name,last_name,height,weight)
+# values ('Krzysztof','Jarzyna',1.68,70);
+#
+# select * from players_andrew;
+#
+# create table cars_andrew(
+# 	car_id serial primary key,
+# 	brand text not null,
+# 	model text not null,
+# 	plates text not null,
+# 	capacity numeric not null
+# );
+#
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Renault','Kadjar','WY 12345',1.6);
+#
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Czarny','Ciągnik','WY 666',2.4);
+#
+#
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Czołg','7TP','UA 12345',5.6);
+#
+#
+# select * from cars_andrew;
+#
+#
+# begin work; --begin
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Renault','Kadjar','WY 12345',1.6);
+#
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Czarny','Ciągnik','WY 666',2.4);
+#
+#
+# insert into cars_andrew(brand,model,plates,capacity)
+# values ('Czołg','7TP','UA 12345',5.6);
+# commit;--rollback;
+#
+# do
+# $$
+# begin
+# raise notice 'whatever';
+# end $$;
+
+
+import psycopg2
+connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgres",password="szkolenie_jsystems_2021")
