@@ -2080,3 +2080,96 @@ import psycopg2
 # print('koniec')
 
 #40. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+# for x in range(-10,11):
+#     print(x,1/x)
+#
+# print('start')
+# try:
+#     print(1/0)
+#     print('coś jeszcze do zrobienia')
+# except:
+#     print('jakiś wyjątek!')
+# print('koniec')
+
+
+#
+# print('start')
+# try:
+#     print(1/0)
+#     print('coś jeszcze do zrobienia')
+# except Exception as e:
+#     print(f'jakiś wyjątek! {e} {type(e)}')
+# print('koniec')
+
+
+#
+# print('start')
+# try:
+#     print(1/0)
+#     print('coś jeszcze do zrobienia')
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# print('koniec')
+
+
+
+# print('start')
+# try:
+#     print(1/0)
+#     print('coś jeszcze do zrobienia')
+# except FileNotFoundError:
+#     print('nie ma takiego pliku')
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# print('koniec')
+#
+# import requests
+# print('start')
+# try:
+#     requests.get('https://adresktoregoniema.gov')
+#     print('coś jeszcze do zrobienia')
+# except FileNotFoundError:
+#     print('nie ma takiego pliku')
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# except:
+#     print('jakiś inny wyjątek')
+# print('koniec')
+
+#
+# import requests
+# print('start')
+# try:
+#     requests.get('https://adresktoregoniema.gov')
+#     print('coś jeszcze do zrobienia')
+# except FileNotFoundError:
+#     print('nie ma takiego pliku')
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# except Exception as e:
+#     print(f'jakiś inny wyjątek. {e} {type(e)}')
+# print('koniec')
+
+#
+# lista=['persons.csv','result.csv','niematakiego.csv','tadzio.txt','wynik.txt']
+# for f in lista:
+#     try:
+#         print(f'przetwarzanie {f}')
+#         open(f)
+#     except FileNotFoundError:
+#         print(f'############## nie moglem znalezc pliku {f}')
+
+#
+# print('start')
+# try:
+#     print(1/0)
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# print('coś jeszcze do zrobienia')
+# print('koniec')
+
+#41. ⦁	Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
+# w taki sposob by w przypadku wyjatku nie przerywac dzialania petli
+# a po prostu wyswietlic na konsoli informację o błędzie i przejsc
+# do dalszego przetwarzania
+
