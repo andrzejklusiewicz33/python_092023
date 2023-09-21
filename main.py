@@ -2032,22 +2032,33 @@ import psycopg2
 # print(f'czas trwania {k-s}s')
 
 
-
+# data=[(1,'B'),(2,'A'),(3,'C')]
+# sorted_data=sorted(data,key=lambda x:x[1])
+# for sd in sorted_data:
+#     print(sd)
+#) Przepakuj dane ze słownika do listy i posortuj.
+#
 import time
 s=time.time()
 all=open('tadzio.txt',encoding='utf-8').read().lower()
-not_wanted=[',','.','!','?','/','%',')','(','-',':']
+not_wanted=[',','.','!','?','/','%',')','(','-','—',':']
 for n in not_wanted:
     all=all.replace(n,'')
 words=all.split()
+#print(words)
 sl=dict()
 for w in words:
     if w in sl:
-        sl[w]=sl[w]+1 #zwiększ wartość dla tego klucza w słowniku o jeden
+        sl[w]=sl[w]+1 #sl[w]+=1
     else:
-        sl[w]=1 #dodać do słownika wpis o takim kluczu jak to słowo z wartością 1
+        sl[w]=1
+for k in sl:
+    print(k,sl[k])
 k=time.time()
 print(f'czas trwania {k-s}s')
+
+# print(ord('C'))
+# print(chr(67))
 
 #slownik['klucz']=1
 #slownik['klucz']=slownik['klucz']+1
