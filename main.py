@@ -2172,4 +2172,34 @@ import psycopg2
 # w taki sposob by w przypadku wyjatku nie przerywac dzialania petli
 # a po prostu wyswietlic na konsoli informację o błędzie i przejsc
 # do dalszego przetwarzania
+#
+# for x in range(-10,11):
+#     print(1/x)
 
+#
+# for x in range(-10,11):
+#     try:
+#         print(x,1/x)
+#     except:
+#         print('error......')
+
+
+# for x in range(-10,11):
+#     try:
+#         print(x,1/x)
+#     except Exception as e:
+#         print(f'error...... {type(e)}')
+
+
+# for x in range(-10,11):
+#     try:
+#         print(x,1/x)
+#     except ZeroDivisionError:
+#         print(f'nie dziel przez zero!')
+
+
+#42. ⦁	Przetwórz wszystkie wiersze z data.csv
+#  wyswietlajac na konsoli dane z wiersza wzbogacone o bmi.
+#  Nie podmieniaj przecinków etc w tekscie. W przypadku pojawienia się wyjątku dla
+#  któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku errors.csv wzbogacony o informację o rodzaju błędu
+#4;Andrzej;Klusiewicz;1,89;90;IOERROR
