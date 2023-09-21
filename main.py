@@ -2578,3 +2578,13 @@ import psycopg2
 #49. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było
 # podawać nazwy pakietu ani modułu.
+#
+# import tools.body
+# print(tools.body.bmi(1.76,90))
+#
+# #
+# import tools.body  as tb
+# print(tb.bmi(1.76,90))
+#
+# from tools.body import bmi
+# print(bmi(1.76,90))
