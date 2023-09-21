@@ -2482,6 +2482,90 @@ import psycopg2
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
 
+# def get_csv(file_name,enc='utf-8',delimiter=';'):
+#     return [e.strip().split(delimiter) for e in open(file_name,encoding=enc)]
+#
+# lista=[1,2,3,4]
+# def print_list(data):
+#     pass
+#
+# print_list(lista)
+
+
+
+
+
+# def get_csv(file_name,enc='utf-8',delimiter=';'):
+#     return [e.strip().split(delimiter) for e in open(file_name,encoding=enc)]
+#
+# def print_list(data):
+#     for e in data:
+#         print(e)
+
+# data=get_csv('files/data.csv')
+# print_list(data)
+#
+# print_list( get_csv('files/data.csv')  )
+
+# lista=[1,2,3,4]
+# print_list(lista)
+
+
+# import stuff
+#
+# stuff.fun()
+
+
+
+# import stuff as s
+#
+# s.fun()
+#
+# from stuff import fun
+# fun()
+
+#
+# from stuff import fun,inna
+# fun()
+# inna()
+
+#
+# from stuff import *
+# fun()
+# inna()
+
+# def funkcja():
+#     print('pierwsza wersja')
+#
+# def funkcja():
+#     print('druga wersja')
+#
+# from stuff import funkcja
+# funkcja()
+#
+# import invoice_dao as idao
+# import participant_dao as pdao
+# idao.get_all()
+# pdao.get_all()
+
+# from invoice_dao import get_all
+# from participant_dao import get_all
+# get_all()
+# get_all()
+
+#import invoice_dao
+
+#import this
+
+#48. Oddeleguj do osobnego modulu "utils" funkcje z ostatnich 2 cwiczen (jedna zwaracajaca plik csv jako lista list,
+# druga przyjmujaca liste list i drukujaca na ekranie). Następnie odbierz dane od pierwszej funkcji
+# i przekaż do drugiej.
+
 def get_csv(file_name,enc='utf-8',delimiter=';'):
     return [e.strip().split(delimiter) for e in open(file_name,encoding=enc)]
 
+def print_list(data):
+    for e in data:
+        print(e)
+
+print_list( get_csv('files/data.csv')  )
