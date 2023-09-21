@@ -2439,3 +2439,22 @@ import psycopg2
 #45. ⦁	 Napisz funkcję która zwróci pod postacią listy list zawartość pliku
   # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
   # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8
+
+
+# def krotkowiec(v_file,v_encoding='utf-8'):
+#     lista = [_ for _ in open(v_file, encoding=v_encoding)]
+#     for l in lista:
+#
+#         k=tuple(l.split(';'))
+#         print(k)
+#     return lista
+
+def get_csv(file_name,enc='utf-8'):
+    return [e.strip().split(';') for e in open(file_name,encoding=enc)]
+
+#lista=[e.strip().split(';') for e in open('files/data.csv')]
+for l in get_csv('files/data.csv'):
+    print(l)
+
+#46. Przerób rozwiązanie poprzedniego ćwiczenia w taki sposób, by rozdzielacz tez był podany
+# przez argument funkcji, a w przypadku jego niepodania przyjmował ";"
