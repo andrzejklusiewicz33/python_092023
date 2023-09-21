@@ -2595,22 +2595,26 @@ import psycopg2
 # if response.status_code==200:
 #     print('ok')
 
+#
+# import requests
+# response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+# print('kod odpowiedzi:',response.status_code)
+# if response.status_code==200:
+#     print('ok')
+#     #print(response.text)
+#     #print(response.json())
+#     data=response.json()
+#     print(data['imie'])
+#     address=data['adres']
+#     print(address['miasto'])
+#     print(data['adres']['miasto'])
+#     print('jezyki:')
+#     # languages=data['jezyki']
+#     # for l in languages:
+#     #     print(l)
+#     for l in data['jezyki']:
+#         print(l)
 
-import requests
-response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
-print('kod odpowiedzi:',response.status_code)
-if response.status_code==200:
-    print('ok')
-    #print(response.text)
-    #print(response.json())
-    data=response.json()
-    print(data['imie'])
-    address=data['adres']
-    print(address['miasto'])
-    print(data['adres']['miasto'])
-    print('jezyki:')
-    # languages=data['jezyki']
-    # for l in languages:
-    #     print(l)
-    for l in data['jezyki']:
-        print(l)
+
+#50. Pobierz dane z https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
+# wyświetl na konsoli aktualny kurs franka i pole effectiveDate
