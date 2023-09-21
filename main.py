@@ -2436,6 +2436,6 @@ import psycopg2
 # witacz('Andrzej')
 
 
-#45. ⦁	 Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+#45. ⦁	 Napisz funkcję która zwróci pod postacią listy list zawartość pliku
   # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
   # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8
