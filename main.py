@@ -2618,3 +2618,10 @@ import psycopg2
 
 #50. Pobierz dane z https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
 # wyświetl na konsoli aktualny kurs franka i pole effectiveDate
+
+import requests
+response=requests.get('https://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json')
+if response.status_code==200:
+    data=response.json()
+    found=data['rates'][0]
+    print(found)
