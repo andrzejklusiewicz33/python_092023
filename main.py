@@ -2045,15 +2045,20 @@ not_wanted=[',','.','!','?','/','%',')','(','-','—',':']
 for n in not_wanted:
     all=all.replace(n,'')
 words=all.split()
-#print(words)
 sl=dict()
 for w in words:
     if w in sl:
         sl[w]=sl[w]+1 #sl[w]+=1
     else:
         sl[w]=1
+result=[]
 for k in sl:
-    print(k,sl[k])
+    row=[k,sl[k]]
+    result.append(row)
+#sortowanko
+for r in result:
+    print(r)
+
 k=time.time()
 print(f'czas trwania {k-s}s')
 
