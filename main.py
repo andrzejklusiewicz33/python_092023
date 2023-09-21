@@ -2588,3 +2588,9 @@ import psycopg2
 #
 # from tools.body import bmi
 # print(bmi(1.76,90))
+
+import requests
+response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+print('kod odpowiedzi:',response.status_code)
+if response.status_code==200:
+    print('ok')
