@@ -2203,3 +2203,145 @@ import psycopg2
 #  Nie podmieniaj przecinków etc w tekscie. W przypadku pojawienia się wyjątku dla
 #  któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku errors.csv wzbogacony o informację o rodzaju błędu
 #4;Andrzej;Klusiewicz;1,89;90;IOERROR
+
+# lista=['1','Andrzej','Klusiewicz']
+# print(lista)
+# print(';'.join(lista)+";ZeroDivisionError")
+
+
+# print(1/0)
+#
+# print(1,68/2.5)
+# print(1.68/2.5)
+# print(1,2,3,4)
+
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# for d in data:
+#     try:
+#         height=float(d[3])
+#         weight=float(d[4])
+#         bmi=round(weight/height**2,2)
+#         d.append(bmi)
+#         print(d)
+#     except ValueError:
+#         print('fakap'+str(d))
+
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# for d in data:
+#     try:
+#         height=float(d[3])
+#         weight=float(d[4])
+#         bmi=round(weight/height**2,2)
+#         d.append(bmi)
+#         print(d)
+#     except ValueError:
+#         log_line=";".join(d)+";ValueError"
+#         print(log_line)
+
+
+#
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# for d in data:
+#     try:
+#         height=float(d[3])
+#         weight=float(d[4])
+#         bmi=round(weight/height**2,2)
+#         d.append(bmi)
+#         print(d)
+#     except ValueError:
+#         log_line=";".join(d)+";ValueError"
+#         print(log_line)
+
+
+
+
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# for d in data:
+#     try:
+#         height=float(d[3])
+#         weight=float(d[4])
+#         bmi=round(weight/height**2,2)
+#         d.append(bmi)
+#         print(d)
+#     except ValueError:
+#         with open('errors.csv',mode="w",encoding='utf-8') as log:
+#             log_line=";".join(d)+";ValueError"
+#             print(log_line)
+#             log.write(log_line+'\n')
+
+
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# for d in data:
+#     try:
+#         height=float(d[3])
+#         weight=float(d[4])
+#         bmi=round(weight/height**2,2)
+#         d.append(bmi)
+#         print(d)
+#     except ValueError:
+#         with open('errors.csv',mode="a",encoding='utf-8') as log:
+#             log_line=";".join(d)+";ValueError"
+#             print(log_line)
+#             log.write(log_line+'\n')
+
+#data=get_data('data.csv',';')
+
+# data=[e.strip().split(';') for e in open('files/data.csv')]
+# with open('errors.csv', mode="w", encoding='utf-8') as log:
+#     for d in data:
+#         try:
+#             height=float(d[3])
+#             weight=float(d[4])
+#             bmi=round(weight/height**2,2)
+#             d.append(bmi)
+#             print(d)
+#         except ValueError as ve:
+#             log_line=";".join(d)+f";ValueError;{ve}"
+#             log.write(log_line+'\n')
+
+
+#DRY
+#
+# def dodawanie(a,b):
+#     wynik=a+b
+#     return wynik
+#
+# q=dodawanie(2,3)
+# print(q)
+#
+# print(dodawanie(3,4))
+#
+# def witacz(imie):
+#     print(f'siema {imie}! Ładnie dziś wyglądasz')
+#
+# witacz('Andrzej')
+#
+# def odejmowanie(a,b):
+#     return a-b
+#
+# print(odejmowanie(10,8))
+#
+# def mnozenie(a,b):
+#     return a*b
+#     print('coś co nigdy nie nastapi')
+#
+# print(mnozenie(6,9))
+#
+# def fun():
+#     data=[1,2,3,4,5]
+#     return data
+#
+# q=fun()
+# for d in q:
+#     print(d)
+#
+# for d in fun():
+#     print(d)
+
+#44. ⦁	Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
+# do 2 miejsc po przecinku BMI. W przypadku pojawienia się wyjątku,
+# wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
