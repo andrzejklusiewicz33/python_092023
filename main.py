@@ -2752,3 +2752,125 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 #52. ⦁	Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #   wszystkie wiersze z tabelki cars_xxxx w fomacie csv.
+
+# lista=['Andrzej','Klusiewicz','1.76']
+# print(";".join(lista))
+# krotka=('Andrzej','Klusiewicz','1.76')
+# print(";".join(krotka))
+
+#
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# cursor=connection.cursor()
+# cursor.execute('select * from cars_andrew')
+# with open('cars.csv',encoding='utf-8',mode='w') as file:
+#     for row in cursor:
+#         print(row)
+#         string_row=[str(r) for r in row]
+#         line_csv=";".join(string_row)+"\n"
+#         print(line_csv)
+#         file.write(line_csv)
+
+
+#
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# cursor=connection.cursor()
+# cursor.execute('select * from cars_andrew')
+# with open('cars.csv',encoding='utf-8',mode='w') as file:
+#     for row in cursor:
+#         string_row=[str(r) for r in row]
+#         line_csv=";".join(string_row)+"\n"
+#         file.write(line_csv)
+
+
+# import psycopg2
+# with psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",
+#                       password="szkolenie_jsystems_2021") as connection:
+#     cursor=connection.cursor()
+#     cursor.execute('select * from cars_andrew')
+#     with open('cars.csv',encoding='utf-8',mode='w') as file:
+#         for row in cursor:
+#             string_row=[str(r) for r in row]
+#             line_csv=";".join(string_row)+"\n"
+#             file.write(line_csv)
+
+
+# def export_cars(file_name):
+#     import psycopg2
+#     with psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",
+#                           password="szkolenie_jsystems_2021") as connection:
+#         cursor=connection.cursor()
+#         cursor.execute('select * from cars_andrew')
+#         with open(file_name,encoding='utf-8',mode='w') as file:
+#             for row in cursor:
+#                 string_row=[str(r) for r in row]
+#                 line_csv=";".join(string_row)+"\n"
+#                 file.write(line_csv)
+#
+# export_cars('my_cars.csv')
+
+
+# def export_sql_to_csv(file_name,sql):
+#     import psycopg2
+#     with psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",
+#                           password="szkolenie_jsystems_2021") as connection:
+#         cursor=connection.cursor()
+#         cursor.execute(sql)
+#         with open(file_name,encoding='utf-8',mode='w') as file:
+#             for row in cursor:
+#                 string_row=[str(r) for r in row]
+#                 line_csv=";".join(string_row)+"\n"
+#                 file.write(line_csv)
+#
+# export_sql_to_csv('export.csv','select * from players_andrew')
+
+# def export_sql_to_csv(file_name,sql,divisor=';'):
+#     import psycopg2
+#     with psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",
+#                           password="szkolenie_jsystems_2021") as connection:
+#         cursor=connection.cursor()
+#         cursor.execute(sql)
+#         with open(file_name,encoding='utf-8',mode='w') as file:
+#             for row in cursor:
+#                 string_row=[str(r) for r in row]
+#                 line_csv=divisor.join(string_row)+"\n"
+#                 file.write(line_csv)
+#
+# export_sql_to_csv('export.csv','select * from players_andrew','|')
+
+#
+# def export_sql_to_csv(file_name,sql,divisor=';'):
+#     import psycopg2
+#     import dbconfig
+#     with psycopg2.connect(host=dbconfig.db_host,port=dbconfig.db_port,database=dbconfig.db_database
+#             ,user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+#         cursor=connection.cursor()
+#         cursor.execute(sql)
+#         with open(file_name,encoding='utf-8',mode='w') as file:
+#             for row in cursor:
+#                 string_row=[str(r) for r in row]
+#                 line_csv=divisor.join(string_row)+"\n"
+#                 file.write(line_csv)
+#
+# export_sql_to_csv('export.csv','select * from players_andrew','|')
+
+
+
+def export_sql_to_csv(file_name,sql,divisor=';'):
+    import psycopg2
+    import dbconfig
+    with psycopg2.connect(host=dbconfig.db_host,port=dbconfig.db_port,database=dbconfig.db_database
+            ,user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+        cursor=connection.cursor()
+        try:
+            cursor.execute(sql)
+            with open(file_name,encoding='utf-8',mode='w') as file:
+                for row in cursor:
+                    string_row=[str(r) for r in row]
+                    line_csv=divisor.join(string_row)+"\n"
+                    file.write(line_csv)
+        except psycopg2.errors.SyntaxError:
+            print(f'Błędny sql! SQL={sql}')
+
+export_sql_to_csv('export.csv','dupa','|')
