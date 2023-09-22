@@ -3284,6 +3284,7 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 #59. Załaduj dane z pliku data.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
 
+import utils
 class Player:
     def __init__(self,id,first_name,last_name,height,weight):
         self.id=id
@@ -3294,5 +3295,11 @@ class Player:
     def __str__(self):
         return str(self.__dict__)
 
-p=Player(1,'Andrzej','Klusiewicz',1.76,80)
-print(p)
+#for line in open('files/data.csv',encoding='utf-8')
+data=utils.get_csv('files/data.csv',enc='utf-8')
+result=[]
+for d in data:
+    p=Player(d[0],..........)
+    result.append(p)
+
+
