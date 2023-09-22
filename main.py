@@ -2958,7 +2958,54 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 #
 # p1.introduce_yourself()
 # p2.introduce_yourself()
-
+#
 #54. Stwórz klasę "Car" posiadającą pola "brand", "model", "plates".
 # Klasa ta powinna zawierać też metodę "print_me" wypisującą dane z obiektu na konsoli. Stwórz dwa obiekty tej klasy,
 # uzupełnij je danymi  i korzystajac  z metody "print_me" wyswietl na konsoli ich zawartość.
+
+
+# class Car:
+#     brand=None
+#     model=None
+#     plates=None
+#     def print_me(self):
+#         print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+#
+# c1=Car()
+# c1.brand='Audi'
+# c1.model='A8'
+# c1.plates='WWL AB112'
+#
+# c2=Car()
+# c2.brand='Mercedes'
+# c2.model='W124'
+# c2.plates='EWI 12345'
+#
+# c1.print_me()
+# c2.print_me()
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+#     def set_all(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# p1=Person()
+# p1.set_all('Andrzej','Klusiewicz')
+# p1.introduce_yourself()
+
+#55. #Zadbaj o to by klasa Car posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: c1.set_values(‘Renault’,’Kadjar’,’WE968RP’)
+
+
+#
+class Car:
+    brand=None
+    model=None
+    plates=None
+    def print_me(self):
+        print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
