@@ -3003,9 +3003,100 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 
 #
+# class Car:
+#     '''Aby ustawić wszystkie pola wywołaj funkcję set_all'''
+#     brand=None
+#     model=None
+#     plates=None
+#     def set_all(self,b,m,p):
+#         self.brand=b
+#         self.model=m
+#         self.plates=p
+#     def print_me(self):
+#         print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+#
+# c=Car()
+# #c.set_all('BMW','e46','ABC 12345')
+# c.print_me()
+#help(Car)
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+#     def __init__(self):
+#         print('tworzenie obiektu')
+#     def set_all(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# p=Person()
+# #p=Person('Andrzej','Klusiewicz')
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+#     def __init__(self,x):
+#         print(f'tworzenie obiektu x={x}')
+#     def set_all(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# p=Person(1)
+#p=Person('Andrzej','Klusiewicz')
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# p=Person('Andrzej','Klusiewicz')
+# p.introduce_yourself()
+
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#     def __init__(self,fn='domyślne imię',ln='domyślne nazwisko'):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# #p=Person('Andrzej','Klusiewicz')
+# p=Person('Andrzej')
+# #p=Person()
+# p.introduce_yourself()
+
+
+#56. Dodaj do klasy Car konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy Car i wywolaj na nim metode print_me
+
+
 class Car:
+    '''Aby ustawić wszystkie pola wywołaj funkcję set_all'''
     brand=None
     model=None
     plates=None
+    def set_all(self,b,m,p):
+        self.brand=b
+        self.model=m
+        self.plates=p
     def print_me(self):
         print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+
+c=Car()
+#c.set_all('BMW','e46','ABC 12345')
+c.print_me()
