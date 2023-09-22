@@ -3283,25 +3283,59 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 #59. Załaduj dane z pliku data.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
-
-import utils
-class Player:
-    def __init__(self,id,first_name,last_name,height,weight):
-        self.id=id
-        self.first_name=first_name
-        self.last_name=last_name
-        self.height=height
-        self.weight=weight
-    def __str__(self):
-        return str(self.__dict__)
-
-#for line in open('files/data.csv',encoding='utf-8')
-data=utils.get_csv('files/data.csv',enc='utf-8')
-result=[]
-for d in data:
-    #p=Player(d[0],d[1],d[2],d[3],d[4])
-    p = Player(*d)
-    result.append(p)
+#
+# import utils
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# data=utils.get_csv('files/data.csv',enc='utf-8')
+# result=[]
+# for d in data:
+#     p = Player(*d)
+#     result.append(p)
 
 
 
+
+#
+# import utils
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# data=utils.get_csv('files/data.csv',enc='utf-8')
+# result=[]
+# for d in data:
+#     result.append(Player(*d))
+
+
+
+# import utils
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# data=utils.get_csv('files/data.csv',enc='utf-8')
+# result=[Player(*d) for d in data]
+# print(result)
+# for r in result:
+#     print(r)
