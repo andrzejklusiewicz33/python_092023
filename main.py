@@ -2888,13 +2888,77 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 
 #53. ⦁	Załaduj do tabelki players_xxx wszystkie dane z pliku data.csv
+#
+# import utils
+# import dbconfig
+# data=utils.get_csv('files/data.csv')
+# with psycopg2.connect(host=dbconfig.db_host, port=dbconfig.db_port, database=dbconfig.db_database
+#         , user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+#     cursor = connection.cursor()
+#     for d in data:
+#         print(d)
+#     connection.commit()
+# #
+# def funkcja(file_name='default',kodowanie):
+#     pass
 
-import utils
-import dbconfig
-data=utils.get_csv('files/data.csv')
-with psycopg2.connect(host=dbconfig.db_host, port=dbconfig.db_port, database=dbconfig.db_database
-        , user=dbconfig.db_user, password=dbconfig.db_password) as connection:
-    cursor = connection.cursor()
-    for d in data:
-        print(d)
-    connection.commit()
+#
+# def funkcja(kodowanie,file_name='default'):
+#     pass
+
+
+# import utils
+# import dbconfig
+# data=utils.get_csv('files/data.csv')
+# with psycopg2.connect(host=dbconfig.db_host, port=dbconfig.db_port, database=dbconfig.db_database
+#         , user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+#     cursor = connection.cursor()
+#     for d in data:
+#         sql=f"insert into players_andrew(first_name,last_name,height,weight) values ('{d[1]}','{d[2]}',{d[3]},{d[4]})"
+#         print(sql)
+#         cursor.execute(sql)
+#     connection.commit()
+
+
+#klasa
+#obiekt
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusieiwicz'
+#
+# p2=Person()
+# p2.first_name='Artur'
+# p2.last_name='Błażejczyk'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusieiwicz'
+#
+# p2=Person()
+# p2.first_name='Artur'
+# p2.last_name='Błażejczyk'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+#
+# p1.introduce_yourself()
+# p2.introduce_yourself()
+
+#54. Stwórz klasę "Car" posiadającą pola "brand", "model", "plates".
+# Klasa ta powinna zawierać też metodę "print_me" wypisującą dane z obiektu na konsoli. Stwórz dwa obiekty tej klasy,
+# uzupełnij je danymi  i korzystajac  z metody "print_me" wyswietl na konsoli ich zawartość.
