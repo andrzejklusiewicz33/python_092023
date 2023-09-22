@@ -3179,3 +3179,63 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 #https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf
 #klusiewicz@jsystems.pl
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+# p1=Person('Andrzej','Klusiewicz')
+# p2=Person('Jan','Golibroda')
+# print(p1)
+# print(p2)
+#print(p1.first_name,p1.last_name)
+#print(p2.first_name,p2.last_name)
+
+
+#
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#     def introduce_yourself(self):
+#         print(f'siema jestem {self.first_name} {self.last_name}!')
+#
+# def get_persons_all():
+#     return [
+#         Person('Andrzej','Klusiewicz'),
+#         Person('Jan','Golibroda')
+#     ]
+#
+# for e in get_persons_all():
+#     print(e)
+
+#58. Dodaj do klasy Car metodę serializującą. Stwórz dwa obiekty tej klasy
+# i wyświetl na konsoli ich zserializowaną postać
+
+class Car:
+    def __init__(self,brand,model,plates):
+        self.brand=brand
+        self.model=model
+        self.plates=plates
+
+    def set_all(self,brand,model,plates):
+        self.brand=brand
+        self.model=model
+        self.plates=plates
+    def print_me(self):
+        print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
