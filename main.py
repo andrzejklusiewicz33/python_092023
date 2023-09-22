@@ -2887,4 +2887,14 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 #     #connection.rollback()
 
 
-#53. ⦁	Załaduj do tabelki players_xxx wszystkie dane z pliku dane.csv
+#53. ⦁	Załaduj do tabelki players_xxx wszystkie dane z pliku data.csv
+
+import utils
+import dbconfig
+data=utils.get_csv('files/data.csv')
+with psycopg2.connect(host=dbconfig.db_host, port=dbconfig.db_port, database=dbconfig.db_database
+        , user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+    cursor = connection.cursor()
+    for d in data:
+        print(d)
+    connection.commit()
