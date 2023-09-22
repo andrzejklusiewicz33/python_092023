@@ -3113,9 +3113,69 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy
 # i wyświetl na konsoli obliczone BMI.
 
-class Player:
-    def __init__(self,height,weight):
-        pass
+# class Player:
+#     height=None
+#     weight=None
+#     def __init__(self,height,weight):
+#         self.height=height
+#         self.weight=weight
+#
+#     def get_bmi(self):
+#         bmi=round(self.weight/pow(self.height,2),2)
+#         return bmi
+#
+#
+# p=Player(1.76,80)
+# print(p.get_bmi())
 
-    def get_bmi(self):
-        pass
+#
+#
+# class Player:
+#     def __init__(self,height,weight):
+#         self.height=height
+#         self.weight=weight
+#
+#     def get_bmi(self):
+#         bmi=round(self.weight/pow(self.height,2),2)
+#         return bmi
+#
+#
+# p=Player(1.76,80)
+# print(p.get_bmi())
+# p.first_name='Zenek'
+# print(p.height,p.weight,p.first_name)
+#
+# class A:
+#     def hello_a(self):
+#         print('hello A')
+#
+# class B:
+#     def hello_b(self):
+#         print('hello B')
+#
+#
+# class C(A,B):
+#     pass
+#
+# c=C()
+# c.hello_a()
+# c.hello_b()
+
+
+# class A:
+#     def hello(self):
+#         print('hello A')
+#
+# class B:
+#     def hello(self):
+#         print('hello B')
+#
+#
+# class C(A,B):
+#     pass
+#
+# c=C()
+# c.hello()
+
+#https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf
+#klusiewicz@jsystems.pl
