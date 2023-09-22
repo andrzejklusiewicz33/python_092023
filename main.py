@@ -3286,6 +3286,13 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 class Player:
     def __init__(self,id,first_name,last_name,height,weight):
-        pass
+        self.id=id
+        self.first_name=first_name
+        self.last_name=last_name
+        self.height=height
+        self.weight=weight
     def __str__(self):
-        pass
+        return str(self.__dict__)
+
+p=Player(1,'Andrzej','Klusiewicz',1.76,80)
+print(p)
