@@ -3281,5 +3281,5 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 #print(c1.__dict__)
 
-#59. Załaduj dane z pliku zawodnicy.csv do postaci listy obiektów.
+#59. Załaduj dane z pliku data.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
