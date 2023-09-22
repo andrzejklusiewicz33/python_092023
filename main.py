@@ -2715,5 +2715,9 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 # end $$;
 
 
-import psycopg2
-connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+
+
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432,database="postgres",user="postgres",password="oracle")
