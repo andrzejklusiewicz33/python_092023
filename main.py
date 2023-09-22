@@ -3085,18 +3085,30 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 # Stworz obiekt klasy Car i wywolaj na nim metode print_me
 
 
-class Car:
-    '''Aby ustawić wszystkie pola wywołaj funkcję set_all'''
-    brand=None
-    model=None
-    plates=None
-    def set_all(self,b,m,p):
-        self.brand=b
-        self.model=m
-        self.plates=p
-    def print_me(self):
-        print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+# class Car:
+#     '''Aby ustawić wszystkie pola wywołaj funkcję set_all'''
+#     brand=None
+#     model=None
+#     plates=None
+#
+#     def __init__(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#
+#     def set_all(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#     def print_me(self):
+#         print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+#
+# c=Car('A','B','C')
+# #c.set_all('BMW','e46','ABC 12345')
+# c.print_me()
 
-c=Car()
-#c.set_all('BMW','e46','ABC 12345')
-c.print_me()
+
+#57. Stwórz klasę Player posiadającą pola height i weight. Pola te mają być uzupełniane przy tworzeniu obiektu
+# i ma być wymagane podanie danych do pól przy tworzeniu obiektu.
+# Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy
+# i wyświetl na konsoli obliczone BMI.
