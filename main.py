@@ -3299,7 +3299,9 @@ class Player:
 data=utils.get_csv('files/data.csv',enc='utf-8')
 result=[]
 for d in data:
-    p=Player(d[0],..........)
+    #p=Player(d[0],d[1],d[2],d[3],d[4])
+    p = Player(*d)
     result.append(p)
+
 
 
