@@ -3227,15 +3227,59 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 #58. Dodaj do klasy Car metodę serializującą. Stwórz dwa obiekty tej klasy
 # i wyświetl na konsoli ich zserializowaną postać
 
-class Car:
-    def __init__(self,brand,model,plates):
-        self.brand=brand
-        self.model=model
-        self.plates=plates
+# class Car:
+#     def __init__(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#
+#     def __str__(self):
+#         return f'brand={self.brand}, model={self.model}, plates={self.plates}'
+#
+#     def set_all(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#     def print_me(self):
+#         print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+#
+#
+# c1=Car('Volvo','xc60','QWE 12345')
+# c2=Car('Dacia','Logan','ZAQ 12345')
+# print(c1)
+# print(c2)
 
-    def set_all(self,brand,model,plates):
-        self.brand=brand
-        self.model=model
-        self.plates=plates
-    def print_me(self):
-        print(f'brand={self.brand}, model={self.model}, plates={self.plates}')
+
+# class Car:
+#     def __init__(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#     def __str__(self):
+#         return f'brand={self.brand}, model={self.model}, plates={self.plates}'
+#
+# c1=Car('Volvo','xc60','QWE 12345')
+# c2=Car('Dacia','Logan','ZAQ 12345')
+# print(c1)
+# print(c2)
+#
+# print(c1.__dict__)
+
+# class Car:
+#     def __init__(self,brand,model,plates):
+#         self.brand=brand
+#         self.model=model
+#         self.plates=plates
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# c1=Car('Volvo','xc60','QWE 12345')
+# c2=Car('Dacia','Logan','ZAQ 12345')
+# c1.dodane='hello'
+# print(c1)
+# print(c2)
+
+#print(c1.__dict__)
+
+#59. Załaduj dane z pliku zawodnicy.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
