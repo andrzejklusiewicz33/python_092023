@@ -2857,20 +2857,34 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 
 
-def export_sql_to_csv(file_name,sql,divisor=';'):
-    import psycopg2
-    import dbconfig
-    with psycopg2.connect(host=dbconfig.db_host,port=dbconfig.db_port,database=dbconfig.db_database
-            ,user=dbconfig.db_user, password=dbconfig.db_password) as connection:
-        cursor=connection.cursor()
-        try:
-            cursor.execute(sql)
-            with open(file_name,encoding='utf-8',mode='w') as file:
-                for row in cursor:
-                    string_row=[str(r) for r in row]
-                    line_csv=divisor.join(string_row)+"\n"
-                    file.write(line_csv)
-        except psycopg2.errors.SyntaxError:
-            print(f'Błędny sql! SQL={sql}')
+# def export_sql_to_csv(file_name,sql,divisor=';'):
+#     import psycopg2
+#     import dbconfig
+#     with psycopg2.connect(host=dbconfig.db_host,port=dbconfig.db_port,database=dbconfig.db_database
+#             ,user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+#         cursor=connection.cursor()
+#         try:
+#             cursor.execute(sql)
+#             with open(file_name,encoding='utf-8',mode='w') as file:
+#                 for row in cursor:
+#                     string_row=[str(r) for r in row]
+#                     line_csv=divisor.join(string_row)+"\n"
+#                     file.write(line_csv)
+#         except psycopg2.errors.SyntaxError:
+#             print(f'Błędny sql! SQL={sql}')
+#
+# export_sql_to_csv('export.csv','dupa','|')
 
-export_sql_to_csv('export.csv','dupa','|')
+# import psycopg2
+# import dbconfig
+#
+# with psycopg2.connect(host=dbconfig.db_host, port=dbconfig.db_port, database=dbconfig.db_database
+#         , user=dbconfig.db_user, password=dbconfig.db_password) as connection:
+#     cursor = connection.cursor()
+#     sql="insert into cars_andrew(brand,model,plates,capacity) values ('Ikarus','MOD 1','WE 12345',2.4)"
+#     cursor.execute(sql)
+#     connection.commit()
+#     #connection.rollback()
+
+
+#53. ⦁	Załaduj do tabelki players_xxx wszystkie dane z pliku dane.csv
