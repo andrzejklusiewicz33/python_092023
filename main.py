@@ -3112,3 +3112,10 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 # i ma być wymagane podanie danych do pól przy tworzeniu obiektu.
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy
 # i wyświetl na konsoli obliczone BMI.
+
+class Player:
+    def __init__(self,height,weight):
+        pass
+
+    def get_bmi(self):
+        pass
