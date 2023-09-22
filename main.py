@@ -2721,3 +2721,34 @@ connection=psycopg2.connect(host="13.74.139.54",database="postgres",user="postgr
 
 # import psycopg2
 # connection=psycopg2.connect(host="localhost",port=5432,database="postgres",user="postgres",password="oracle")
+#
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# cursor=connection.cursor()
+# cursor.execute('select * from players_andrew')
+# for row in cursor:
+#     print(row)
+
+
+#
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# cursor=connection.cursor()
+# cursor.execute('select * from players_andrew')
+# for row in cursor:
+#     print(row[1],row[2])
+
+#cx_Oracle
+
+
+#
+# import psycopg2
+# connection=psycopg2.connect(host="13.74.139.54",port=5432,database="postgres",user="postgres",password="szkolenie_jsystems_2021")
+# cursor=connection.cursor()
+# cursor.execute('select first_name,last_name from players_andrew')
+# for row in cursor:
+#     print(row)
+
+
+#52. ⦁	Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#   wszystkie wiersze z tabelki cars_xxxx w fomacie csv.
